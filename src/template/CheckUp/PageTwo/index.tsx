@@ -6,16 +6,13 @@ import * as S from './styles';
 
 const PageTwoTemplate = () => (
     <S.Wrapper>
-        <QuestionnaireHeader />
+        <QuestionnaireHeader
+            previousPage="/CheckUp/PageOne"
+            nextPage="/CheckUp/PageThree"
+        />
         <S.Container>
             <S.SubHeaderContainer>
                 <S.SubHeader>
-                    <FlowButton
-                        previousPage="/CheckUp/PageOne"
-                        nextPage="/CheckUp/PageThree"
-                        title="back"
-                        hasIconLeft
-                    />
                     <S.PageCouterText>2/8</S.PageCouterText>
                 </S.SubHeader>
                 <BorderLinearProgress variant="determinate" value={60} />

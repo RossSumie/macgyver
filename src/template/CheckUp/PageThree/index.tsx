@@ -7,17 +7,11 @@ import * as S from './styles';
 
 const PageThreeTemplate = () => (
     <S.Wrapper>
-        <QuestionnaireHeader />
+        <QuestionnaireHeader previousPage="/CheckUp/PageTwo" nextPage="/Home" />
         <S.Container>
             <S.SubHeaderContainer>
                 <S.SubHeader>
-                    <FlowButton
-                        previousPage="/"
-                        nextPage="/CheckUp/PageTwo"
-                        title="back"
-                        hasIconLeft
-                    />
-                    <S.PageCouterText>3/8</S.PageCouterText>
+                    <S.PageCouterText>1/8</S.PageCouterText>
                 </S.SubHeader>
                 <BorderLinearProgress variant="determinate" value={90} />
             </S.SubHeaderContainer>

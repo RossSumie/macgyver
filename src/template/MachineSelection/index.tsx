@@ -32,7 +32,7 @@ const MachineSelectionTemplate = () => (
                         width={80}
                         height={80}
                     />
-                    EC90e 01
+                    EC90E 01
                 </S.MenuButton>
                 <S.MenuButton onClick={() => Router.push('/Home')}>
                     <img
@@ -41,7 +41,7 @@ const MachineSelectionTemplate = () => (
                         width={80}
                         height={80}
                     />
-                    EC90e 02
+                    EC90E 02
                 </S.MenuButton>{' '}
                 <S.MenuButton onClick={() => Router.push('/Home')}>
                     <img
@@ -50,7 +50,7 @@ const MachineSelectionTemplate = () => (
                         width={80}
                         height={80}
                     />
-                    EC90e 03
+                    EC90E 03
                 </S.MenuButton>{' '}
                 <S.MenuButton onClick={() => Router.push('/Home')}>
                     <img

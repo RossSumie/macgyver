@@ -28,7 +28,8 @@ export const defaultTheme = {
         mono: 'Söhne Mono, menlo, monospace',
         novumregular: 'VolvoNovum, sans-serif',
         novumlight: 'VolvoNovumLight, sans-serif',
-        novummedium: 'VolvoNovumMedium, sans-serif'
+        novummedium: 'VolvoNovumMedium, sans-serif',
+        volvobroad: 'VolvoBroadPro, sans-serif'
     },
     fontWeights: {
         novumregular: 700,

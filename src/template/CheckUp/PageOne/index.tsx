@@ -28,16 +28,13 @@ const PageOneTemplate = () => {
 
     return (
         <S.Wrapper>
-            <QuestionnaireHeader />
+            <QuestionnaireHeader
+                previousPage="/Home"
+                nextPage="/CheckUp/PageTwo"
+            />
             <S.Container>
                 <S.SubHeaderContainer>
                     <S.SubHeader>
-                        <FlowButton
-                            previousPage="/"
-                            nextPage="/CheckUp/PageTwo"
-                            title="back"
-                            hasIconLeft
-                        />
                         <S.PageCouterText>1/8</S.PageCouterText>
                     </S.SubHeader>
                     <BorderLinearProgress variant="determinate" value={30} />

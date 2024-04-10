@@ -1,20 +1,27 @@
 import React from 'react';
+import FlowButton from 'components/Buttons/FlowButton';
 // import { useRouter } from 'next/dist/client/router';
 
 import { Container, IconContainer, LogoContainer } from './styles';
 
-const QuestionnaireHeader: React.FC = () => {
+export type TestProps = {
+    previousPage: string;
+    nextPage: string;
+};
+
+const QuestionnaireHeader: React.FC<TestProps> = ({
+    previousPage,
+    nextPage
+}) => {
     // const router = useRouter();
     return (
         <Container>
-            <IconContainer>
-                <img
-                    src="/assets/Action_Home_Black.svg"
-                    alt="home_icon"
-                    width={24}
-                    height={24}
-                />
-            </IconContainer>
+            <FlowButton
+                hasIconLeft
+                title="Back"
+                previousPage={previousPage}
+                nextPage={nextPage}
+            />
             <LogoContainer>
                 <img
                     src="/assets/Volvo-Spread-Word-Mark-Black.svg"

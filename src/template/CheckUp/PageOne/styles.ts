@@ -34,10 +34,10 @@ export const Container = styled.div`
 `;
 export const SubHeader = styled.div`
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     width: 100%;
+    margin: 8px;
 `;
 export const PageCouterText = styled.h1`
     font-family: ${({ theme }) => theme.fonts.novumlight};

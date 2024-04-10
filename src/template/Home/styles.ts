@@ -44,6 +44,7 @@ export const MenuButton = styled.button`
     border-radius: 8px;
     border: none;
     background-color: ${({ theme }) => theme.colors.primary.light};
+    font-family: ${({ theme }) => theme.fonts.volvobroad};
     font-size: 20px;
     font-weight: 700;
     box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
