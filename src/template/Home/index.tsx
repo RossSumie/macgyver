@@ -1,18 +1,11 @@
 import QuestionHeader from 'components/QuestionHeader';
+import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import Router from 'next/router';
 import * as S from './styles';
 
 const HomeTemplate = () => (
     <S.Wrapper>
-        <S.HeaderContainer>
-            <S.LogoContainer>
-                <img
-                    src="/assets/Volvo-Spread-Word-Mark-Black.svg"
-                    height={8}
-                    alt="logo"
-                />
-            </S.LogoContainer>
-        </S.HeaderContainer>
+        <QuestionnaireHeader previousPage="/" nextPage="/" />
         <S.Container>
             <QuestionHeader title="How can we assist you today?" />
             <S.ButtonContainer>

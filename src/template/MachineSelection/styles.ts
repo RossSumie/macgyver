@@ -15,7 +15,7 @@ export const ButtonContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 8px;
+    gap: 16px;
 `;
 export const SubHeaderContainer = styled.div`
     display: flex;
@@ -34,20 +34,43 @@ export const Container = styled.div`
 `;
 
 export const MenuButton = styled.button`
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    height: 100px;
     width: 100%;
-    padding: 16px;
     border-radius: 8px;
     border: none;
-    background-color: ${({ theme }) => theme.colors.primary.light};
+    background-position: 'center';
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(
+            0,
+            0,
+            0,
+            0.3
+        ); // Adjust the darkness by changing the opacity
+        z-index: 1;
+    }
+`;
+
+export const ButtonText = styled.h1`
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     font-size: 16px;
     font-weight: 700;
-    text-align: left;
-    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
-    gap: 16px;
+    color: ${({ theme }) => theme.colors.primary.light};
 `;
 
 export const AddMachineButton = styled.button`

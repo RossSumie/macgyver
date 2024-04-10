@@ -25,50 +25,55 @@ const MachineSelectionTemplate = () => (
                 />
             </S.AddMachineButton>
             <S.ButtonContainer>
-                <S.MenuButton onClick={() => Router.push('/Home')}>
-                    <img
-                        src="/assets/crawler-excavator-ec950e.jpg"
-                        alt="machine_image"
-                        width={80}
-                        height={80}
-                    />
-                    EC90E 01
+                <S.MenuButton
+                    onClick={() => Router.push('/Home')}
+                    style={{
+                        backgroundImage: 'url("/assets/EC210D.jpg")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }}
+                >
+                    <S.ButtonText>EC210D 02</S.ButtonText>
                 </S.MenuButton>
-                <S.MenuButton onClick={() => Router.push('/Home')}>
-                    <img
-                        src="/assets/crawler-excavator-ec950e.jpg"
-                        alt="machine_image"
-                        width={80}
-                        height={80}
-                    />
-                    EC90E 02
-                </S.MenuButton>{' '}
-                <S.MenuButton onClick={() => Router.push('/Home')}>
-                    <img
-                        src="/assets/crawler-excavator-ec950e.jpg"
-                        alt="machine_image"
-                        width={80}
-                        height={80}
-                    />
-                    EC90E 03
-                </S.MenuButton>{' '}
-                <S.MenuButton onClick={() => Router.push('/Home')}>
-                    <img
-                        src="/assets/wheel-loader-l260h.jpg"
-                        alt="machine_image"
-                        width={80}
-                        height={80}
-                    />
-                    L260H 01
-                </S.MenuButton>{' '}
-                <S.MenuButton onClick={() => Router.push('/Home')}>
-                    <img
-                        src="/assets/articulated-hauler-a60h.jpg"
-                        alt="machine_image"
-                        width={80}
-                        height={80}
-                    />
-                    A60H 01
+                <S.MenuButton
+                    onClick={() => Router.push('/Home')}
+                    style={{
+                        backgroundImage: 'url("/assets/EC350D.jpg")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }}
+                >
+                    <S.ButtonText>EC350DD 01</S.ButtonText>
+                </S.MenuButton>
+                <S.MenuButton
+                    onClick={() => Router.push('/Home')}
+                    style={{
+                        backgroundImage: 'url("/assets/EC950E.jpg")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }}
+                >
+                    <S.ButtonText>EC950E 01</S.ButtonText>
+                </S.MenuButton>
+                <S.MenuButton
+                    onClick={() => Router.push('/Home')}
+                    style={{
+                        backgroundImage: 'url("/assets/EC350D.jpg")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }}
+                >
+                    <S.ButtonText>EC350D1 02</S.ButtonText>
+                </S.MenuButton>
+                <S.MenuButton
+                    onClick={() => Router.push('/Home')}
+                    style={{
+                        backgroundImage: 'url("/assets/EC350D.jpg")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }}
+                >
+                    <S.ButtonText>EC350D1 03</S.ButtonText>
                 </S.MenuButton>
             </S.ButtonContainer>
         </S.Container>
