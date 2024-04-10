@@ -5,7 +5,7 @@ export const defaultTheme = {
             main: 'hsl(223, 36%, 20%)',
             dark: 'hsl(0, 0%, 8%)'
         },
-        tealOne: {
+        secondary: {
             light: 'hsl(171, 37%, 80%)',
             medium: 'hsl(170, 36%, 67%)',
             main: '	hsl(170, 34%, 55%)',
