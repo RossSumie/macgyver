@@ -2,34 +2,31 @@ import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import { BorderLinearProgress } from 'components/ProgressBar';
 import FlowButton from 'components/Buttons/FlowButton';
 import RowRadioButtonsGroup from 'components/RadioButtonGroup';
+import ImageUploadMock from 'components/ImageUploadMock';
 import * as S from './styles';
 
-const PageTwoTemplate = () => (
+const PageThreeTemplate = () => (
     <S.Wrapper>
         <QuestionnaireHeader />
         <S.Container>
             <S.SubHeaderContainer>
                 <S.SubHeader>
                     <FlowButton
-                        previousPage="/CheckUp/PageOne"
-                        nextPage="/CheckUp/PageThree"
+                        previousPage="/"
+                        nextPage="/CheckUp/PageTwo"
                         title="back"
                         hasIconLeft
                     />
-                    <S.PageCouterText>2/8</S.PageCouterText>
+                    <S.PageCouterText>3/8</S.PageCouterText>
                 </S.SubHeader>
-                <BorderLinearProgress variant="determinate" value={60} />
+                <BorderLinearProgress variant="determinate" value={90} />
             </S.SubHeaderContainer>
             <S.QuestionContainer>
-                <S.Heading>Weather</S.Heading>
-                <S.SubHeading>How is the weather today?</S.SubHeading>
-                <RowRadioButtonsGroup
-                    title1="Hot"
-                    title2="Cold"
-                    title3="Windy"
-                    title4="Downpour"
-                    title5="NA"
-                />
+                <S.Heading>Engine|Picture</S.Heading>
+                <S.SubHeading>
+                    Please take a picture of the hydraulic system
+                </S.SubHeading>
+                <ImageUploadMock />
             </S.QuestionContainer>
             <S.QuestionContainer>
                 <S.Heading>Weather</S.Heading>
@@ -66,11 +63,11 @@ const PageTwoTemplate = () => (
             </S.QuestionContainer>
             <FlowButton
                 previousPage="/CheckUp/PageOne"
-                nextPage="/CheckUp/PageThree"
+                nextPage="/"
                 hasIconLeft={false}
                 title="Next"
             />
         </S.Container>
     </S.Wrapper>
 );
-export default PageTwoTemplate;
+export default PageThreeTemplate;
