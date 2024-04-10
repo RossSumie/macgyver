@@ -25,7 +25,7 @@ export const SubHeaderContainer = styled.div`
 `;
 
 export const Container = styled.div`
-    padding: 10%;
+    padding: 0% 10% 10% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,4 +44,16 @@ export const PageCouterText = styled.h1`
     font-weight: ${({ theme }) => theme.fontWeights.novumlight};
     font-size: 16px;
     color: ${({ theme }) => theme.colors.primary.dark};
+`;
+
+export const InputTitle = styled.p`
+    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.primary.dark};
+`;
+
+export const InputContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;

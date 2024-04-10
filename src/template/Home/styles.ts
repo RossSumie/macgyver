@@ -30,7 +30,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 5vh;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 `;
 
 export const MenuButton = styled.button`
