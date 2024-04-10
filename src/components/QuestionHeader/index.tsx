@@ -4,10 +4,10 @@ export type TestProps = {
     title: string;
 };
 
-const Test: React.FC<TestProps> = ({ title }) => (
+const QuestionHeader: React.FC<TestProps> = ({ title }) => (
     <S.Wrapper>
-        <p>{title}</p>
+        <h1>{title}</h1>
     </S.Wrapper>
 );
 
-export default Test;
+export default QuestionHeader;

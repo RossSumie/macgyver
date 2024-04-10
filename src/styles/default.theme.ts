@@ -1,14 +1,15 @@
 export const defaultTheme = {
     colors: {
         primary: {
-            light: 'hsl(205 ,74%, 65%)',
-            main: 'hsl(205, 67%, 45%)',
-            dark: 'hsl(205, 87%, 29%)'
+            light: 'hsl(0, 0%, 100%)',
+            main: 'hsl(223, 36%, 20%)',
+            dark: 'hsl(0, 0%, 8%)'
         },
-        secondary: {
-            light: 'hsl(174, 96%, 78%)',
-            main: 'hsl(180, 77%, 47%)',
-            dark: 'hsl(186, 91%, 29%)'
+        tealOne: {
+            light: 'hsl(171, 37%, 80%)',
+            medium: 'hsl(170, 36%, 67%)',
+            main: '	hsl(170, 34%, 55%)',
+            dark: 'hsl(180, 34%, 47%)'
         }
     },
     space: [4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256],
@@ -24,9 +25,16 @@ export const defaultTheme = {
     },
     fonts: {
         untitled: 'Untitled Sans, apple-system, sans-serif',
-        mono: 'Söhne Mono, menlo, monospace'
+        mono: 'Söhne Mono, menlo, monospace',
+        novumregular: 'VolvoNovum, sans-serif',
+        novumlight: 'VolvoNovumLight, sans-serif',
+        novummedium: 'VolvoNovumMedium, sans-serif'
     },
-    fontWeights: {},
+    fontWeights: {
+        novumregular: 700,
+        novummedium: 900,
+        novumlight: 200
+    },
     lineHeights: {},
     letterSpacings: {},
     sizes: {},

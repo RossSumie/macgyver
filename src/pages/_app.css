@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'VolvoNovum';
+    src: url('/fonts/VolvoNovumTTF/VolvoNovum-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VolvoNovumMedium';
+    src: url('/fonts/VolvoNovumTTF/VolvoNovum-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VolvoNovumLight';
+    src: url('/fonts/VolvoNovumTTF/VolvoNovum-Light.ttf') format('ttf');
+    font-weight: light;
+    font-style: normal;
+}
