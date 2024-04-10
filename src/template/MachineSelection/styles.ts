@@ -71,6 +71,7 @@ export const ButtonText = styled.h1`
     font-size: 16px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.primary.light};
+    font-family: ${({ theme }) => theme.fonts.novumlight};
 `;
 
 export const AddMachineButton = styled.button`

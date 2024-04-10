@@ -9,7 +9,7 @@ export type TestProps = {
     title2: string;
     title3: string;
     title4: string;
-    title5: string;
+    title5?: string;
 };
 const RowRadioButtonsGroup: React.FC<TestProps> = ({
     title1,
@@ -20,48 +20,87 @@ const RowRadioButtonsGroup: React.FC<TestProps> = ({
 }) => {
     return (
         <FormControl>
-            <RadioGroup
-                row
-                aria-labelledby="demo-row-radio-buttons-group-label"
-                name="row-radio-buttons-group"
-                style={{ justifyContent: 'space-between' }}
-            >
-                <FormControlLabel
-                    value={title1}
-                    control={<Radio style={{ color: '#202A44' }} />}
-                    label={title1}
-                    labelPlacement="bottom"
-                    style={{ marginLeft: '0px', marginRight: '0px' }}
-                />
-                <FormControlLabel
-                    value={title2}
-                    control={<Radio style={{ color: '#202A44' }} />}
-                    label={title2}
-                    labelPlacement="bottom"
-                    style={{ marginLeft: '0px', marginRight: '0px' }}
-                />
-                <FormControlLabel
-                    value={title3}
-                    control={<Radio style={{ color: '#202A44' }} />}
-                    label={title3}
-                    labelPlacement="bottom"
-                    style={{ marginLeft: '0px', marginRight: '0px' }}
-                />
-                <FormControlLabel
-                    value={title4}
-                    control={<Radio style={{ color: '#202A44' }} />}
-                    label={title4}
-                    labelPlacement="bottom"
-                    style={{ marginLeft: '0px', marginRight: '0px' }}
-                />
-                <FormControlLabel
-                    value={title5}
-                    control={<Radio style={{ color: '#202A44' }} />}
-                    label={title5}
-                    labelPlacement="bottom"
-                    style={{ marginLeft: '0px', marginRight: '0px' }}
-                />
-            </RadioGroup>
+            {title5 ? (
+                <RadioGroup
+                    row
+                    aria-labelledby="demo-row-radio-buttons-group-label"
+                    name="row-radio-buttons-group"
+                    style={{ justifyContent: 'space-between' }}
+                >
+                    <FormControlLabel
+                        value={title1}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title1}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title2}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title2}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title3}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title3}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title4}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title4}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title5}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title5}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                </RadioGroup>
+            ) : (
+                <RadioGroup
+                    row
+                    aria-labelledby="demo-row-radio-buttons-group-label"
+                    name="row-radio-buttons-group"
+                    style={{ justifyContent: 'space-between' }}
+                >
+                    <FormControlLabel
+                        value={title1}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title1}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title2}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title2}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title3}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title3}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                    <FormControlLabel
+                        value={title4}
+                        control={<Radio style={{ color: '#202A44' }} />}
+                        label={title4}
+                        labelPlacement="bottom"
+                        style={{ marginLeft: '0px', marginRight: '0px' }}
+                    />
+                </RadioGroup>
+            )}
+            ;
         </FormControl>
     );
 };

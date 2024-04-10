@@ -22,17 +22,10 @@ export const SubHeading = styled.p`
 export const QuestionContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     margin: 24px 0 24px 0;
 `;
-export const ButtonContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 8px;
-`;
+
 export const SubHeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -41,6 +34,7 @@ export const SubHeaderContainer = styled.div`
 `;
 
 export const Container = styled.div`
+    margin-top: 48px;
     padding: 0% 10% 10% 10%;
     display: flex;
     flex-direction: column;

@@ -14,7 +14,7 @@ const MachineSelectionTemplate = () => (
             </S.LogoContainer>
         </S.HeaderContainer>
         <S.Container>
-            <QuestionHeader title="Please select a Machine" />
+            <QuestionHeader title="Please select a machine" />
             <S.AddMachineButton>
                 Add New Machine
                 <img

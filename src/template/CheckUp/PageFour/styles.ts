@@ -23,7 +23,6 @@ export const QuestionContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 24px 0 24px 0;
 `;
 export const SubHeaderContainer = styled.div`
     display: flex;

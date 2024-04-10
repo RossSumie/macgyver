@@ -2,31 +2,24 @@ import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import { BorderLinearProgress } from 'components/ProgressBar';
 import FlowButton from 'components/Buttons/FlowButton';
 import RowRadioButtonsGroup from 'components/RadioButtonGroup';
-import ImageUploadMock from 'components/ImageUploadMock';
 import * as S from './styles';
 
-const PageTwoTemplate = () => (
+const PageFourTemplate = () => (
     <S.Wrapper>
         <QuestionnaireHeader
-            previousPage="/CheckUp/PageOne"
-            nextPage="/CheckUp/PageThree"
+            previousPage="/CheckUp/PageThree"
+            nextPage="/Home"
         />
         <S.Container>
             <S.SubHeaderContainer>
                 <S.SubHeader>
-                    <S.PageCouterText>2/5</S.PageCouterText>
+                    <S.PageCouterText>4/5</S.PageCouterText>
                 </S.SubHeader>
-                <BorderLinearProgress variant="determinate" value={40} />
+                <BorderLinearProgress variant="determinate" value={80} />
             </S.SubHeaderContainer>
             <S.QuestionContainer>
-                <S.Heading>Tracks</S.Heading>
-                <S.SubHeading>
-                    Please take a picture of your tracks
-                </S.SubHeading>
-                <ImageUploadMock />
-            </S.QuestionContainer>
-            <S.QuestionContainer>
-                <S.SubHeading>Evaluate your track motor nuts</S.SubHeading>
+                <S.Heading>Please, start your engine</S.Heading>
+                <S.SubHeading>Can you hear any abnormal sounds?</S.SubHeading>
                 <RowRadioButtonsGroup
                     title1="OK"
                     title2="Faulty but OK"
@@ -35,7 +28,7 @@ const PageTwoTemplate = () => (
                 />
             </S.QuestionContainer>
             <S.QuestionContainer>
-                <S.SubHeading>Evaluate your track wear</S.SubHeading>
+                <S.SubHeading>Are there any abnormal vibrations?</S.SubHeading>
                 <RowRadioButtonsGroup
                     title1="OK"
                     title2="Faulty but OK"
@@ -44,7 +37,7 @@ const PageTwoTemplate = () => (
                 />
             </S.QuestionContainer>
             <S.QuestionContainer>
-                <S.SubHeading>Evaluate your track tension</S.SubHeading>
+                <S.SubHeading>Are there any abnormal smells?</S.SubHeading>
                 <RowRadioButtonsGroup
                     title1="OK"
                     title2="Faulty but OK"
@@ -53,12 +46,12 @@ const PageTwoTemplate = () => (
                 />
             </S.QuestionContainer>
             <FlowButton
-                previousPage="/CheckUp/PageOne"
-                nextPage="/CheckUp/PageThree"
+                previousPage="/CheckUp/PageFour"
+                nextPage="/CheckUp/PageFive"
                 hasIconLeft={false}
                 title="Next"
             />
         </S.Container>
     </S.Wrapper>
 );
-export default PageTwoTemplate;
+export default PageFourTemplate;

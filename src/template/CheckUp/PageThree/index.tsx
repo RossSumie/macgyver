@@ -7,57 +7,65 @@ import * as S from './styles';
 
 const PageThreeTemplate = () => (
     <S.Wrapper>
-        <QuestionnaireHeader previousPage="/CheckUp/PageTwo" nextPage="/Home" />
+        <QuestionnaireHeader
+            previousPage="/CheckUp/PageTwo"
+            nextPage="/CheckUp/PageFour"
+        />
         <S.Container>
             <S.SubHeaderContainer>
                 <S.SubHeader>
-                    <S.PageCouterText>1/8</S.PageCouterText>
+                    <S.PageCouterText>3/5</S.PageCouterText>
                 </S.SubHeader>
-                <BorderLinearProgress variant="determinate" value={90} />
+                <BorderLinearProgress variant="determinate" value={60} />
             </S.SubHeaderContainer>
             <S.QuestionContainer>
-                <S.Heading>Engine|Picture</S.Heading>
+                <S.Heading>Engine</S.Heading>
                 <S.SubHeading>
-                    Please take a picture of the hydraulic system
+                    Please take a picture of your engine and coolant system
                 </S.SubHeading>
                 <ImageUploadMock />
             </S.QuestionContainer>
             <S.QuestionContainer>
-                <S.Heading>Weather</S.Heading>
-                <S.SubHeading>How is the weather today?</S.SubHeading>
+                <S.SubHeading>Evaluate your oil level</S.SubHeading>
                 <RowRadioButtonsGroup
-                    title1="Hot"
-                    title2="Cold"
-                    title3="Windy"
-                    title4="Downpour"
-                    title5="NA"
+                    title1="OK"
+                    title2="Faulty but OK"
+                    title3="Faulty"
+                    title4="NA"
                 />
             </S.QuestionContainer>
             <S.QuestionContainer>
-                <S.Heading>Weather</S.Heading>
-                <S.SubHeading>How is the weather today?</S.SubHeading>
+                <S.SubHeading>Evaluate if there are any oil leaks</S.SubHeading>
                 <RowRadioButtonsGroup
-                    title1="Hot"
-                    title2="Cold"
-                    title3="Windy"
-                    title4="Downpour"
-                    title5="NA"
+                    title1="OK"
+                    title2="Faulty but OK"
+                    title3="Faulty"
+                    title4="NA"
                 />
             </S.QuestionContainer>
             <S.QuestionContainer>
-                <S.Heading>Weather</S.Heading>
-                <S.SubHeading>How is the weather today?</S.SubHeading>
+                <S.SubHeading>Evaluate your coolant level</S.SubHeading>
                 <RowRadioButtonsGroup
-                    title1="Hot"
-                    title2="Cold"
-                    title3="Windy"
-                    title4="Downpour"
-                    title5="NA"
+                    title1="OK"
+                    title2="Faulty but OK"
+                    title3="Faulty"
+                    title4="NA"
+                />
+            </S.QuestionContainer>
+            <S.QuestionContainer>
+                <S.SubHeading>
+                    Evaluate if there are any coolant leaks
+                </S.SubHeading>
+                <RowRadioButtonsGroup
+                    title1="OK"
+                    title2="Faulty but OK"
+                    title3="Faulty"
+                    title4="NA"
                 />
             </S.QuestionContainer>
             <FlowButton
-                previousPage="/CheckUp/PageOne"
-                nextPage="/"
+                previousPage="/CheckUp/PageTwo"
+                nextPage="/CheckUp/PageFour"
                 hasIconLeft={false}
                 title="Next"
             />
