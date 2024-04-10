@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
-import HomeTemplate from 'template/Home';
+import MachineSelectionTemplate from 'template/MachineSelection';
 
-const Home: NextPage = () => {
-    return <HomeTemplate />;
+const MachineSelection: NextPage = () => {
+    return <MachineSelectionTemplate />;
 };
 
-export default Home;
+export default MachineSelection;
