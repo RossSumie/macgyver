@@ -19,3 +19,15 @@ export const InputContainer = styled.div`
     position: relative;
     cursor: pointer;
 `;
+
+export const PhotoInput = styled.input`
+    display: none;
+`;
+
+export const CameraButton = styled.button`
+    border: 'none';
+    background-color: ${({ theme }) => theme.colors.primary.main};
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 100%;
+`;
