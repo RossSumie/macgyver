@@ -10,7 +10,11 @@ const InspectionHomePageTemplate = () => (
         <S.Container>
             <QuestionHeader title="Self Inspection" />
             <S.ButtonContainer>
-                <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>
+                <S.MenuButton
+                    onClick={() =>
+                        Router.push('/Inspection/Questionnaire/PageOne')
+                    }
+                >
                     <S.ButtonTitle>Hydraulic System Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
@@ -29,7 +33,11 @@ const InspectionHomePageTemplate = () => (
                         </S.InformationColumn>
                     </S.InformationContainer>
                 </S.MenuButton>
-                <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>
+                <S.MenuButton
+                    onClick={() =>
+                        Router.push('/Inspection/Questionnaire/PageOne')
+                    }
+                >
                     <S.ButtonTitle>Cooling System Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
@@ -48,7 +56,11 @@ const InspectionHomePageTemplate = () => (
                         </S.InformationColumn>
                     </S.InformationContainer>
                 </S.MenuButton>
-                <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>
+                <S.MenuButton
+                    onClick={() =>
+                        Router.push('/Inspection/Questionnaire/PageOne')
+                    }
+                >
                     <S.ButtonTitle>Moving Parts Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
@@ -67,7 +79,11 @@ const InspectionHomePageTemplate = () => (
                         </S.InformationColumn>
                     </S.InformationContainer>
                 </S.MenuButton>
-                <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>
+                <S.MenuButton
+                    onClick={() =>
+                        Router.push('/Inspection/Questionnaire/PageOne')
+                    }
+                >
                     <S.ButtonTitle>
                         Engine Lubrification Inspection
                     </S.ButtonTitle>
