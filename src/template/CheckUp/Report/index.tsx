@@ -109,65 +109,46 @@ const ReportTemplate = () => {
                             src="/assets/EC210D.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
+                                height: 'auto',
+                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                            }}
                             alt="logo"
                         />
                         <img
                             src="/assets/EC210D.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
+                                height: 'auto',
+                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                            }}
                             alt="logo"
                         />
                         <img
                             src="/assets/EC210D.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
+                                height: 'auto',
+                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                            }}
                             alt="logo"
                         />
                         <img
                             src="/assets/EC210D.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
+                                height: 'auto',
+                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                            }}
                             alt="logo"
                         />
                         <img
                             src="/assets/EC210D.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
+                                height: 'auto',
+                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                            }}
                             alt="logo"
-                        />
-                        <img
-                            src="/assets/EC210D.jpg"
-                            style={{
-                                width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
-                            alt="logo"
-                        />
-                        <img
-                            src="/assets/EC210D.jpg"
-                            style={{
-                                width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
-                            alt="logo"
-                        />
-                        <img
-                            src="/assets/EC210D.jpg"
-                            style={{
-                                width: 'calc(100% - 8px)',
-                                height: 'calc(100% - 8px)'
-                            }} // Adjust the width and height to fit the grid cell with padding
-                            alt="excavator"
                         />
                     </S.Images>
                 </S.ImagesContainer>

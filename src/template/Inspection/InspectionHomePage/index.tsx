@@ -15,7 +15,7 @@ const InspectionHomePageTemplate = () => (
                         Router.push('/Inspection/Questionnaire/PageOne')
                     }
                 >
-                    <S.ButtonTitle>Hydraulic System Inspection</S.ButtonTitle>
+                    <S.ButtonTitle>Cooling System Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
                             <S.ButtonText>Concern Level</S.ButtonText>
@@ -38,7 +38,7 @@ const InspectionHomePageTemplate = () => (
                         Router.push('/Inspection/Questionnaire/PageOne')
                     }
                 >
-                    <S.ButtonTitle>Cooling System Inspection</S.ButtonTitle>
+                    <S.ButtonTitle>Hydraulic System Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
                             <S.ButtonText>Concern Level</S.ButtonText>
@@ -56,11 +56,7 @@ const InspectionHomePageTemplate = () => (
                         </S.InformationColumn>
                     </S.InformationContainer>
                 </S.MenuButton>
-                <S.MenuButton
-                    onClick={() =>
-                        Router.push('/Inspection/Questionnaire/PageOne')
-                    }
-                >
+                <S.MenuButton>
                     <S.ButtonTitle>Moving Parts Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
@@ -79,11 +75,7 @@ const InspectionHomePageTemplate = () => (
                         </S.InformationColumn>
                     </S.InformationContainer>
                 </S.MenuButton>
-                <S.MenuButton
-                    onClick={() =>
-                        Router.push('/Inspection/Questionnaire/PageOne')
-                    }
-                >
+                <S.MenuButton>
                     <S.ButtonTitle>
                         Engine Lubrification Inspection
                     </S.ButtonTitle>

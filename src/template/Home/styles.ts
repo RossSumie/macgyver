@@ -49,6 +49,7 @@ export const MenuButton = styled.button`
     font-size: 20px;
     font-weight: 700;
     box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
+    color: 'black';
 `;
 export const HeaderContainer = styled.div`
     display: flex;
