@@ -19,6 +19,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Container = styled.div`
+    margin-top: 48px;
     padding: 10%;
     display: flex;
     flex-direction: column;

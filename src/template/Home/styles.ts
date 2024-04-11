@@ -32,6 +32,7 @@ export const Container = styled.div`
     gap: 5vh;
     height: 100vh;
     width: 100%;
+    margin-top: 48px;
 `;
 
 export const MenuButton = styled.button`

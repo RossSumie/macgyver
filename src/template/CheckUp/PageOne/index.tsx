@@ -7,7 +7,7 @@ import * as S from './styles';
 
 const PageOneTemplate = () => (
     <S.Wrapper>
-        <QuestionnaireHeader previousPage="/CheckUp/PageTwo" nextPage="/Home" />
+        <QuestionnaireHeader previousPage="/Home" nextPage="/Home" />
         <S.Container>
             <S.SubHeaderContainer>
                 <S.SubHeader>

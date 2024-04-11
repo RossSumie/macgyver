@@ -15,6 +15,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const Container = styled.div`
+    margin-top: 48px;
     padding: 10%;
     display: flex;
     flex-direction: column;

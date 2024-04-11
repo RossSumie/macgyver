@@ -28,7 +28,10 @@ const PageFiveTemplate = () => {
 
     return (
         <S.Wrapper>
-            <QuestionnaireHeader previousPage="/PageFour" nextPage="/" />
+            <QuestionnaireHeader
+                previousPage="/CheckUp/PageFour"
+                nextPage="/"
+            />
             <S.Container>
                 <S.SubHeaderContainer>
                     <S.SubHeader>

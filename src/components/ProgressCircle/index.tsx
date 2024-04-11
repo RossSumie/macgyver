@@ -21,6 +21,7 @@ function CircularProgressWithLabel(
                 value={value}
                 size={100}
                 thickness={10}
+                sx={{ color: '#396976' }}
             />{' '}
             {/* Using value */}
             <Box
@@ -39,6 +40,7 @@ function CircularProgressWithLabel(
                     variant="caption"
                     component="div"
                     color="text.secondary"
+                    fontSize={20}
                 >{`${Math.round(value)}%`}</Typography>{' '}
                 {/* Using value */}
             </Box>
@@ -49,5 +51,19 @@ function CircularProgressWithLabel(
 export default function CircularWithValueLabel({
     value
 }: CircularWithValueLabelProps) {
-    return <CircularProgressWithLabel value={value} />;
+    const [progress, setProgress] = React.useState(0);
+
+    React.useEffect(() => {
+        const timer = setInterval(() => {
+            setProgress((prevProgress) =>
+                prevProgress >= value ? value : prevProgress + 1
+            );
+        }, 9); // Adjust the interval to control the animation speed
+
+        return () => {
+            clearInterval(timer);
+        };
+    }, [value]);
+
+    return <CircularProgressWithLabel value={progress} />;
 }
