@@ -78,11 +78,16 @@ export const TableCell = styled.div`
 
 export const Images = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, auto); /* Define three columns */
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-auto-rows: minmax(
+        50px,
+        auto
+    ); /* Minimum row height of 100px, auto-adjust based on content */
+    gap: 10px; /* Gap between grid items */
     align-items: center;
+    justify-content: center;
     width: 100%;
     gap: 8px;
-    height: 300px;
 `;
 export const ImagesContainer = styled.div`
     display: flex;

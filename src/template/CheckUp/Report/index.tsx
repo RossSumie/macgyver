@@ -109,8 +109,7 @@ const ReportTemplate = () => {
                             src="/assets/motor.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'auto',
-                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                                height: 'auto'
                             }}
                             alt="logo"
                         />
@@ -118,8 +117,7 @@ const ReportTemplate = () => {
                             src="/assets/vara.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'auto',
-                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                                height: 'auto'
                             }}
                             alt="logo"
                         />
@@ -127,8 +125,7 @@ const ReportTemplate = () => {
                             src="/assets/roda.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'auto',
-                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                                height: 'auto'
                             }}
                             alt="logo"
                         />
@@ -136,8 +133,7 @@ const ReportTemplate = () => {
                             src="/assets/motorverde.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'auto',
-                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                                height: 'auto'
                             }}
                             alt="logo"
                         />
@@ -145,8 +141,7 @@ const ReportTemplate = () => {
                             src="/assets/escava.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
-                                height: 'auto',
-                                paddingTop: 'calc(100% - 8px)' // Set the height based on the width
+                                height: 'auto'
                             }}
                             alt="logo"
                         />

@@ -18,7 +18,9 @@ const HomeTemplate = () => (
                 <S.MenuButton onClick={() => Router.push('/SelfReport')}>
                     <S.MenuText>Self Report</S.MenuText>
                 </S.MenuButton>
-                <S.MenuButton>Troubleshoot Guide</S.MenuButton>
+                <S.MenuButton>
+                    <S.MenuText>Troubleshoot Guide</S.MenuText>
+                </S.MenuButton>
             </S.ButtonContainer>
         </S.Container>
     </S.Wrapper>
