@@ -10,13 +10,13 @@ const HomeTemplate = () => (
             <QuestionHeader title="How can we assist you today?" />
             <S.ButtonContainer>
                 <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>
-                    Daily CheckUp
+                    <S.MenuText>Daily CheckUp</S.MenuText>
                 </S.MenuButton>
                 <S.MenuButton onClick={() => Router.push('/Inspection')}>
-                    Inspection
+                    <S.MenuText>Inspection</S.MenuText>.
                 </S.MenuButton>
                 <S.MenuButton onClick={() => Router.push('/SelfReport')}>
-                    Self Report
+                    <S.MenuText>Self Report</S.MenuText>
                 </S.MenuButton>
                 <S.MenuButton>Troubleshoot Guide</S.MenuButton>
             </S.ButtonContainer>

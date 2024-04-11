@@ -106,7 +106,7 @@ const ReportTemplate = () => {
                     <S.Heading2>Images</S.Heading2>
                     <S.Images>
                         <img
-                            src="/assets/EC210D.jpg"
+                            src="/assets/motor.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
                                 height: 'auto',
@@ -115,7 +115,7 @@ const ReportTemplate = () => {
                             alt="logo"
                         />
                         <img
-                            src="/assets/EC210D.jpg"
+                            src="/assets/vara.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
                                 height: 'auto',
@@ -124,7 +124,7 @@ const ReportTemplate = () => {
                             alt="logo"
                         />
                         <img
-                            src="/assets/EC210D.jpg"
+                            src="/assets/roda.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
                                 height: 'auto',
@@ -133,7 +133,7 @@ const ReportTemplate = () => {
                             alt="logo"
                         />
                         <img
-                            src="/assets/EC210D.jpg"
+                            src="/assets/motorverde.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
                                 height: 'auto',
@@ -142,7 +142,7 @@ const ReportTemplate = () => {
                             alt="logo"
                         />
                         <img
-                            src="/assets/EC210D.jpg"
+                            src="/assets/escava.jpg"
                             style={{
                                 width: 'calc(100% - 8px)',
                                 height: 'auto',
