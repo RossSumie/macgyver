@@ -16,7 +16,7 @@ const CustomTabs: React.FC<CustomTabsProps> = ({ tabs }) => {
     const [value, setValue] = useState<number>(0);
 
     const handleChange = (
-        event: React.SyntheticEvent,
+        _event: React.SyntheticEvent,
         newValue: number
     ): void => {
         setValue(newValue);
