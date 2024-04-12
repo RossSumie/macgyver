@@ -9,13 +9,37 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 
+export const InformationWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+`;
+
+export const InformationContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+`;
+
+export const TitleContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+`;
+
+export const MachineHealthContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+`;
 export const ButtonContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 8px;
+    gap: 16px;
 `;
 export const SubHeaderContainer = styled.div`
     display: flex;
@@ -29,14 +53,14 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5vh;
+    gap: 3vh;
     height: 100vh;
     width: 100%;
     margin-top: 48px;
 `;
 
 export const MenuButton = styled.button`
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -72,4 +96,18 @@ export const LogoContainer = styled.div`
     justify-content: center;
     width: 170px;
     height: 72px;
+`;
+
+export const MachineTitle = styled.h1`
+    font-family: ${({ theme }) => theme.fonts.volvobroad};
+    font-size: 16px;
+    font-weight: 700;
+    color: 'black';
+`;
+
+export const MachineSubTitle = styled.h2`
+    font-family: ${({ theme }) => theme.fonts.volvobroad};
+    font-size: 12px;
+    font-weight: 400;
+    color: 'black';
 `;

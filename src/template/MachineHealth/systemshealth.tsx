@@ -8,7 +8,7 @@ const SystemsHealth = () => {
         <S.Container>
             <S.Heading>Machine Health Status</S.Heading>
             <S.GraphContainer>
-                <CircularWithValueLabel value={71} />{' '}
+                <CircularWithValueLabel value={71} isSmall={false} />
                 <S.GraphSubtitle>General Health</S.GraphSubtitle>
             </S.GraphContainer>
             <S.TableContainer>
@@ -28,13 +28,13 @@ const SystemsHealth = () => {
                     <S.SubHeading>Engine</S.SubHeading>
                 </S.TableCell>
                 <S.TableCell>
-                    <S.SubHeading>61%</S.SubHeading>
+                    <S.SubHeading>76%</S.SubHeading>
                 </S.TableCell>
                 <S.TableCell>
                     <S.SubHeading>Cooling</S.SubHeading>
                 </S.TableCell>
                 <S.TableCell>
-                    <S.SubHeading>76%</S.SubHeading>
+                    <S.SubHeading>61%</S.SubHeading>
                 </S.TableCell>
                 <S.TableCell>
                     <S.SubHeading>Electrical</S.SubHeading>

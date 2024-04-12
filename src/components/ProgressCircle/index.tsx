@@ -2,28 +2,35 @@ import * as React from 'react';
 import CircularProgress, {
     CircularProgressProps
 } from '@mui/material/CircularProgress';
+
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 interface CircularWithValueLabelProps {
     value: number; // Progress value passed as a prop
+    isSmall: boolean;
 }
 
 function CircularProgressWithLabel(
-    props: CircularProgressProps & { value: number }
+    props: CircularProgressProps & { value: number; isSmall: boolean }
 ) {
-    const { value, ...otherProps } = props; // Destructuring value and otherProps
+    const { value, isSmall, ...otherProps } = props; // Destructuring value, isSmall, and otherProps
+
+    // Conditional style based on isSmall
+    const size = isSmall ? 40 : 100;
+    const thickness = isSmall ? 8 : 10;
+    const fontSize = isSmall ? '10px' : '20px';
+
     return (
         <Box sx={{ position: 'relative', display: 'inline-flex' }}>
             <CircularProgress
                 variant="determinate"
                 {...otherProps}
                 value={value}
-                size={100}
-                thickness={10}
+                size={size} // Conditional size
+                thickness={thickness} // Conditional thickness
                 sx={{ color: '#396976' }}
-            />{' '}
-            {/* Using value */}
+            />
             <Box
                 sx={{
                     top: 0,
@@ -40,16 +47,16 @@ function CircularProgressWithLabel(
                     variant="caption"
                     component="div"
                     color="text.secondary"
-                    fontSize={20}
-                >{`${Math.round(value)}%`}</Typography>{' '}
-                {/* Using value */}
+                    sx={{ fontSize }} // Conditional font size
+                >{`${Math.round(value)}%`}</Typography>
             </Box>
         </Box>
     );
 }
 
 export default function CircularWithValueLabel({
-    value
+    value,
+    isSmall
 }: CircularWithValueLabelProps) {
     const [progress, setProgress] = React.useState(0);
 
@@ -65,5 +72,5 @@ export default function CircularWithValueLabel({
         };
     }, [value]);
 
-    return <CircularProgressWithLabel value={progress} />;
+    return <CircularProgressWithLabel value={progress} isSmall={isSmall} />;
 }
