@@ -39,6 +39,13 @@ export const Heading2 = styled.h1`
     font-family: ${({ theme }) => theme.fonts.novumregular};
     font-size: 16px;
     color: ${({ theme }) => theme.colors.primary.dark};
+    text-align: left;
+`;
+
+export const TableWrapper = styled.div`
+    align-items: left;
+    width: 100%;
+    margin: 24px 0 16px 0;
 `;
 
 export const SubHeading = styled.p`
@@ -63,17 +70,15 @@ export const GraphSubtitle = styled.p`
 
 export const TableContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, auto); /* Define three columns */
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     width: 100%;
 `;
 
 export const TableCell = styled.div`
     padding: 8px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
+    text-align: left;
+    justify-content: left;
 `;
 
 export const Images = styled.div`

@@ -34,13 +34,19 @@ const PageOneTemplate = () => {
                 <S.QuestionContainer>
                     <S.Heading>Enviroment</S.Heading>
                     <S.SubHeading>How is the weather today?</S.SubHeading>
-                    <RowRadioButtonsGroup questionId="E1" options={options1} />
+                    <RowRadioButtonsGroup
+                        questionId="question1"
+                        options={options1}
+                    />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>
                         What type of surface will be operated today?
                     </S.SubHeading>
-                    <RowRadioButtonsGroup questionId="E2" options={options2} />
+                    <RowRadioButtonsGroup
+                        questionId="question2"
+                        options={options2}
+                    />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>

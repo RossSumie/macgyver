@@ -4,10 +4,13 @@ import FlowButton from 'components/Buttons/FlowButton';
 import ImageUploadMock from 'components/ImageUploadMock';
 import * as S from './styles';
 
-const SelfReportTemplate = () => {
+const InputPageTemplate = () => {
     return (
         <S.Wrapper>
-            <QuestionnaireHeader previousPage="/Home" nextPage="/Home" />
+            <QuestionnaireHeader
+                previousPage="/Home"
+                nextPage="/SelfReport/ResponsePage"
+            />
             <S.Container>
                 <S.QuestionContainer>
                     <QuestionHeader title="Would you like to report any issues with your machine?" />
@@ -17,7 +20,7 @@ const SelfReportTemplate = () => {
                 </S.QuestionContainer>
                 <FlowButton
                     previousPage="/Home"
-                    nextPage="/Home"
+                    nextPage="/SelfReport/ResponsePage"
                     hasIconLeft={false}
                     title="Send"
                 />
@@ -25,4 +28,4 @@ const SelfReportTemplate = () => {
         </S.Wrapper>
     );
 };
-export default SelfReportTemplate;
+export default InputPageTemplate;

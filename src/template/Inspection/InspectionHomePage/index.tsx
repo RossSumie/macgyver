@@ -47,11 +47,11 @@ const InspectionHomePageTemplate = () => (
                         <S.InformationColumn>
                             <S.StatusRow>
                                 <StatusCircle color="yellow" />
-                                <S.ButtonText>30%</S.ButtonText>
+                                <S.ButtonText>50%</S.ButtonText>
                             </S.StatusRow>
                             <S.StatusRow>
                                 <StatusCircle color="green" />
-                                <S.ButtonText>Easy</S.ButtonText>
+                                <S.ButtonText>Intermediate</S.ButtonText>
                             </S.StatusRow>
                         </S.InformationColumn>
                     </S.InformationContainer>

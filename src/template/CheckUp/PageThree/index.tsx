@@ -6,12 +6,26 @@ import ImageUploadMock from 'components/ImageUploadMock';
 import * as S from './styles';
 
 const PageThreeTemplate = () => {
-    const options = [
+    const options6 = [
         { value: 'OK', label: 'OK' },
-        { value: 'Faulty but OK', label: 'Faulty but OK' },
-        { value: 'Faulty', label: 'Faulty' },
+        { value: 'Close to minimum', label: 'Close to minimum' },
+        { value: 'Below minimum', label: 'Below minimum' },
         { value: 'NA', label: 'NA' }
     ];
+
+    const options7 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Oil droplets', label: 'Oil droplets' },
+        { value: 'Clear leak', label: 'Clear leak' },
+        { value: 'NA', label: 'NA' }
+    ];
+    const options9 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Coolant droplets', label: 'Coolant droplets' },
+        { value: 'Clear leak', label: 'Clear leak' },
+        { value: 'NA', label: 'NA' }
+    ];
+
     return (
         <S.Wrapper>
             <QuestionnaireHeader
@@ -35,8 +49,8 @@ const PageThreeTemplate = () => {
                 <S.QuestionContainer>
                     <S.SubHeading>Evaluate your oil level</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question4"
-                        options={options}
+                        questionId="question6"
+                        options={options6}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -44,15 +58,15 @@ const PageThreeTemplate = () => {
                         Evaluate if there are any oil leaks
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question5"
-                        options={options}
+                        questionId="question7"
+                        options={options7}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>Evaluate your coolant level</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question6"
-                        options={options}
+                        questionId="question8"
+                        options={options6}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -60,8 +74,8 @@ const PageThreeTemplate = () => {
                         Evaluate if there are any coolant leaks
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question7"
-                        options={options}
+                        questionId="question9"
+                        options={options9}
                     />
                 </S.QuestionContainer>
                 <FlowButton

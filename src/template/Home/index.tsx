@@ -15,7 +15,9 @@ const HomeTemplate = () => (
                 <S.MenuButton onClick={() => Router.push('/Inspection')}>
                     <S.MenuText>Inspection</S.MenuText>.
                 </S.MenuButton>
-                <S.MenuButton onClick={() => Router.push('/SelfReport')}>
+                <S.MenuButton
+                    onClick={() => Router.push('/SelfReport/InputPage')}
+                >
                     <S.MenuText>Self Report</S.MenuText>
                 </S.MenuButton>
                 <S.MenuButton>

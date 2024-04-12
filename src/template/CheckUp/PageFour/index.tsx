@@ -5,10 +5,10 @@ import RowRadioButtonsGroup from 'components/RadioButtonGroup';
 import * as S from './styles';
 
 const PageFourTemplate = () => {
-    const options = [
-        { value: 'OK', label: 'OK' },
-        { value: 'Faulty but OK', label: 'Faulty but OK' },
-        { value: 'Faulty', label: 'Faulty' },
+    const options10 = [
+        { value: 'No', label: 'No' },
+        { value: 'Possibly', label: 'Possibly' },
+        { value: 'Yes', label: 'Yes' },
         { value: 'NA', label: 'NA' }
     ];
     return (
@@ -30,8 +30,8 @@ const PageFourTemplate = () => {
                         Can you hear any abnormal sounds?
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question8"
-                        options={options}
+                        questionId="question10"
+                        options={options10}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -39,15 +39,15 @@ const PageFourTemplate = () => {
                         Are there any abnormal vibrations?
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question9"
-                        options={options}
+                        questionId="question11"
+                        options={options10}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>Are there any abnormal smells?</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question10"
-                        options={options}
+                        questionId="question12"
+                        options={options10}
                     />
                 </S.QuestionContainer>
                 <FlowButton

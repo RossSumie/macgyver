@@ -6,10 +6,24 @@ import ImageUploadMock from 'components/ImageUploadMock';
 import * as S from './styles';
 
 const PageTwoTemplate = () => {
-    const options = [
+    const options2 = [
         { value: 'OK', label: 'OK' },
-        { value: 'Faulty but OK', label: 'Faulty but OK' },
-        { value: 'Faulty', label: 'Faulty' },
+        { value: 'Untightened', label: 'Untightened' },
+        { value: 'Cracked', label: 'Cracked' },
+        { value: 'NA', label: 'NA' }
+    ];
+
+    const options3 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Worn', label: 'Worn' },
+        { value: 'Broken', label: 'Broken' },
+        { value: 'NA', label: 'NA' }
+    ];
+
+    const options4 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Tight', label: 'Tight' },
+        { value: 'Loose', label: 'Loose' },
         { value: 'NA', label: 'NA' }
     ];
 
@@ -36,22 +50,22 @@ const PageTwoTemplate = () => {
                 <S.QuestionContainer>
                     <S.SubHeading>Evaluate your track motor nuts</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question1"
-                        options={options}
+                        questionId="question2"
+                        options={options2}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>Evaluate your track wear</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question2"
-                        options={options}
+                        questionId="question3"
+                        options={options3}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>Evaluate your track tension</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="question3"
-                        options={options}
+                        questionId="question4"
+                        options={options4}
                     />
                 </S.QuestionContainer>
                 <FlowButton
