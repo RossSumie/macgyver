@@ -4,6 +4,8 @@ import Router from 'next/router';
 import CircularWithValueLabel from 'components/ProgressCircle';
 import * as S from './styles';
 
+// the text color is in "inline" because somehow the color wasn't being rendered on iphones
+
 const HomeTemplate = () => (
     <S.Wrapper>
         <QuestionnaireHeader previousPage="/" nextPage="/" />

@@ -3,6 +3,7 @@ import React, { createContext, useContext, useState } from 'react';
 interface AnswersContextType {
     answers: { [questionId: string]: string };
     updateAnswer: (questionId: string, answer: string) => void;
+    resetAnswers: () => void; // Define resetAnswers function
 }
 
 const AnswersContext = createContext<AnswersContextType | undefined>(undefined);
@@ -29,8 +30,16 @@ export const AnswersProvider: React.FC = ({ children }) => {
         }));
     };
 
+    const resetAnswers = () => {
+        setAnswers({}); // Reset answers to empty object
+    };
+
     return (
-        <AnswersContext.Provider value={{ answers, updateAnswer }}>
+        <AnswersContext.Provider
+            value={{ answers, updateAnswer, resetAnswers }}
+        >
+            {' '}
+            {/* Include resetAnswers in the context */}
             {children}
         </AnswersContext.Provider>
     );

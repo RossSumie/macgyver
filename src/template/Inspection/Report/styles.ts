@@ -103,10 +103,19 @@ export const ImagesContainer = styled.div`
     margin: 24px 0 24px 0;
 `;
 
-export const Button = styled.button`
+export const GreenButton = styled.button`
     height: 44px;
     width: 100%;
     background-color: ${({ theme }) => theme.colors.secondary.main};
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 16px;
+`;
+
+export const Button = styled.button`
+    height: 44px;
+    width: 100%;
+    background-color: ${({ theme }) => theme.colors.primary.main};
     border-radius: 24px;
     border: none;
     margin-bottom: 16px;

@@ -21,7 +21,11 @@ const questionTextMap: { [key: string]: string } = {
 };
 
 const ReportTemplate = () => {
-    const { answers } = useAnswersContext();
+    const { answers, resetAnswers } = useAnswersContext();
+    const handleReset = () => {
+        resetAnswers(); // Call resetAnswers function
+        Router.push('/Home'); // Change the route to the home page using Next.js's router
+    };
 
     return (
         <S.Wrapper>
@@ -105,7 +109,7 @@ const ReportTemplate = () => {
                         />
                     </S.Images>
                 </S.ImagesContainer>
-                <S.Button onClick={() => Router.push('/Home')}>
+                <S.Button onClick={handleReset}>
                     <S.ButtonText>Back to Menu</S.ButtonText>
                 </S.Button>
             </S.Container>

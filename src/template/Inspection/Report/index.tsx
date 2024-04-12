@@ -1,9 +1,8 @@
 import React from 'react';
 import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import { useAnswersContext } from 'hooks/answerContext';
-import FlowButton from 'components/Buttons/FlowButton';
+import Router from 'next/router';
 import * as S from './styles';
-
 // Map of question IDs to their corresponding text
 const questionTextMap: { [key: string]: string } = {
     question1: 'Radiator cleanliness',
@@ -16,12 +15,17 @@ const questionTextMap: { [key: string]: string } = {
 };
 
 const ReportTemplate = () => {
-    const { answers } = useAnswersContext();
+    const { answers, resetAnswers } = useAnswersContext();
+
+    const handleReset = () => {
+        resetAnswers(); // Call resetAnswers function
+        Router.push('/Home'); // Change the route to the home page using Next.js's router
+    };
 
     return (
         <S.Wrapper>
             <QuestionnaireHeader
-                previousPage="/CheckUp/PageTwo"
+                previousPage="/Inspection/PageTwo"
                 nextPage="/Home"
             />
             <S.Container>
@@ -113,15 +117,12 @@ const ReportTemplate = () => {
                         />
                     </S.Images>
                 </S.ImagesContainer>
-                <S.Button>
+                <S.GreenButton>
                     <S.ButtonText>Download Report</S.ButtonText>
+                </S.GreenButton>
+                <S.Button onClick={handleReset}>
+                    <S.ButtonText>Back to menu</S.ButtonText>
                 </S.Button>
-                <FlowButton
-                    previousPage="/Inspection/Questionnaire/PageOne"
-                    nextPage="/Home"
-                    hasIconLeft={false}
-                    title="Back to menu"
-                />
             </S.Container>
         </S.Wrapper>
     );

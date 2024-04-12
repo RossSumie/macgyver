@@ -7,9 +7,9 @@ import * as S from './styles';
 
 const PageOneTemplate = () => {
     const options1 = [
-        { value: 'Very Dirty', label: 'Very Dirty' },
-        { value: 'Dirty', label: 'Dirty' },
         { value: 'Clean', label: 'Clean' },
+        { value: 'Dirty', label: 'Dirty' },
+        { value: 'Very Dirty', label: 'Very Dirty' },
         { value: 'NA', label: 'NA' }
     ];
     const options2 = [
