@@ -47,7 +47,7 @@ const PageFiveTemplate = () => {
                         title="Yes"
                     />
                     <OptionButton
-                        onClick={() => Router.push('/Home')}
+                        onClick={() => Router.push('/CheckUp/Report')}
                         title="No"
                     />
                 </S.ButtonContainer>

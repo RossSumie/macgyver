@@ -1,6 +1,5 @@
 import React from 'react';
 import QuestionnaireHeader from 'components/QuestionnaireHeader';
-import Router from 'next/router';
 import { useAnswersContext } from 'hooks/answerContext';
 import FlowButton from 'components/Buttons/FlowButton';
 import * as S from './styles';
@@ -114,7 +113,7 @@ const ReportTemplate = () => {
                         />
                     </S.Images>
                 </S.ImagesContainer>
-                <S.Button onClick={() => Router.push('/Home')}>
+                <S.Button>
                     <S.ButtonText>Download Report</S.ButtonText>
                 </S.Button>
                 <FlowButton

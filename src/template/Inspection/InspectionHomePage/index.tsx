@@ -33,11 +33,7 @@ const InspectionHomePageTemplate = () => (
                         </S.InformationColumn>
                     </S.InformationContainer>
                 </S.MenuButton>
-                <S.MenuButton
-                    onClick={() =>
-                        Router.push('/Inspection/Questionnaire/PageOne')
-                    }
-                >
+                <S.MenuButton>
                     <S.ButtonTitle>Hydraulic System Inspection</S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
