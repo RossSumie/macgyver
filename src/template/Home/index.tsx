@@ -59,7 +59,9 @@ const HomeTemplate = () => (
                     </S.MenuText>
                 </S.MenuButton>
                 <S.MenuButton>
-                    <S.MenuText>Troubleshoot Guide</S.MenuText>
+                    <S.MenuText style={{ color: 'black' }}>
+                        Troubleshoot Guide
+                    </S.MenuText>
                 </S.MenuButton>
             </S.ButtonContainer>
         </S.Container>
