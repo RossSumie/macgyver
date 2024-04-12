@@ -27,10 +27,37 @@ const CustomRowRadioButtonGroup: React.FC<CustomRowRadioButtonGroupProps> = ({
         answers[questionId] || ''
     );
 
+    const colors = ['#4CAF50', '#FFEB3B', '#F44336', '#202A44']; // Define array of colors
+
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = event.target;
         setSelectedValue(value);
         updateAnswer(questionId, value);
+    };
+
+    const colorRadioButtons = () => {
+        if (options.length === 4) {
+            return options.map((option, index) => (
+                <FormControlLabel
+                    key={option.value}
+                    value={option.value}
+                    control={<Radio style={{ color: colors[index] }} />} // Assign color based on index
+                    label={option.label}
+                    labelPlacement="bottom"
+                    style={{ marginLeft: '0px', marginRight: '0px' }}
+                />
+            ));
+        }
+        return options.map((option) => (
+            <FormControlLabel
+                key={option.value}
+                value={option.value}
+                control={<Radio style={{ color: '#202A44' }} />} // Assign blue color
+                label={option.label}
+                labelPlacement="bottom"
+                style={{ marginLeft: '0px', marginRight: '0px' }}
+            />
+        ));
     };
 
     return (
@@ -43,16 +70,7 @@ const CustomRowRadioButtonGroup: React.FC<CustomRowRadioButtonGroupProps> = ({
                 onChange={handleChange}
                 style={{ justifyContent: 'space-between' }}
             >
-                {options.map((option) => (
-                    <FormControlLabel
-                        key={option.value}
-                        value={option.value}
-                        control={<Radio style={{ color: '#202A44' }} />}
-                        label={option.label}
-                        labelPlacement="bottom"
-                        style={{ marginLeft: '0px', marginRight: '0px' }}
-                    />
-                ))}
+                {colorRadioButtons()}
             </RadioGroup>
         </FormControl>
     );
