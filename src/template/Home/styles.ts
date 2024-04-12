@@ -42,6 +42,7 @@ export const MenuButton = styled.button`
     justify-content: left;
     width: 100%;
     padding: 16px;
+    gap: 16px;
     border-radius: 8px;
     border: none;
     background-color: ${({ theme }) => theme.colors.primary.light};

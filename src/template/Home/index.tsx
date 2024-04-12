@@ -13,7 +13,13 @@ const HomeTemplate = () => (
                     <S.MenuText>Daily CheckUp</S.MenuText>
                 </S.MenuButton>
                 <S.MenuButton onClick={() => Router.push('/Inspection')}>
-                    <S.MenuText>Inspection</S.MenuText>.
+                    <S.MenuText>Inspection</S.MenuText>
+                    <img
+                        src="/assets/exclamation.svg"
+                        alt="notification"
+                        width={24}
+                        height={24}
+                    />
                 </S.MenuButton>
                 <S.MenuButton
                     onClick={() => Router.push('/SelfReport/InputPage')}
