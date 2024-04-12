@@ -43,10 +43,10 @@ const InspectionHomePageTemplate = () => (
                         <S.InformationColumn>
                             <S.StatusRow>
                                 <StatusCircle color="yellow" />
-                                <S.ButtonText>50%</S.ButtonText>
+                                <S.ButtonText>21%</S.ButtonText>
                             </S.StatusRow>
                             <S.StatusRow>
-                                <StatusCircle color="green" />
+                                <StatusCircle color="yellow" />
                                 <S.ButtonText>Intermediate</S.ButtonText>
                             </S.StatusRow>
                         </S.InformationColumn>
@@ -62,7 +62,7 @@ const InspectionHomePageTemplate = () => (
                         <S.InformationColumn>
                             <S.StatusRow>
                                 <StatusCircle color="yellow" />
-                                <S.ButtonText>50%</S.ButtonText>
+                                <S.ButtonText>19%</S.ButtonText>
                             </S.StatusRow>
                             <S.StatusRow>
                                 <StatusCircle color="yellow" />
@@ -83,7 +83,7 @@ const InspectionHomePageTemplate = () => (
                         <S.InformationColumn>
                             <S.StatusRow>
                                 <StatusCircle color="yellow" />
-                                <S.ButtonText>50%</S.ButtonText>
+                                <S.ButtonText>9%</S.ButtonText>
                             </S.StatusRow>
                             <S.StatusRow>
                                 <StatusCircle color="green" />
