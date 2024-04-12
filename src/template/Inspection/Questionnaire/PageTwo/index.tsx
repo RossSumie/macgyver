@@ -5,10 +5,22 @@ import RowRadioButtonsGroup from 'components/RadioButtonGroup';
 import * as S from './styles';
 
 const PageTwoTemplate = () => {
-    const options = [
+    const options5 = [
         { value: 'OK', label: 'OK' },
-        { value: 'Faulty but OK', label: 'Faulty but OK' },
-        { value: 'Faulty', label: 'Faulty' },
+        { value: 'Coolant droplets', label: 'Coolant droplets' },
+        { value: 'Clear leak', label: 'Clear leak' },
+        { value: 'NA', label: 'NA' }
+    ];
+    const options6 = [
+        { value: 'No', label: 'No' },
+        { value: 'Possibly', label: 'Possibly' },
+        { value: 'Yes', label: 'Yes' },
+        { value: 'NA', label: 'NA' }
+    ];
+    const options7 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Coolant droplets', label: 'Coolant droplets' },
+        { value: 'Clear leak', label: 'Clear leak' },
         { value: 'NA', label: 'NA' }
     ];
 
@@ -36,15 +48,15 @@ const PageTwoTemplate = () => {
                         Inspect the hoses for any leaks of coolant fluid
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion5"
-                        options={options}
+                        questionId="question5"
+                        options={options5}
                     />
                     <S.SubHeading>
                         Listed for odd sounds from the water pump
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion6"
-                        options={options}
+                        questionId="question6"
+                        options={options6}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -53,8 +65,8 @@ const PageTwoTemplate = () => {
                         air-flow through the radiator and motor block
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion7"
-                        options={options}
+                        questionId="question7"
+                        options={options7}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -65,7 +77,7 @@ const PageTwoTemplate = () => {
                 </S.QuestionContainer>
                 <FlowButton
                     previousPage="/Inspection/Questionnaire/PageOne"
-                    nextPage="/Inspection"
+                    nextPage="/Inspection/Report"
                     hasIconLeft={false}
                     title="Next"
                 />

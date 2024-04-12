@@ -6,17 +6,30 @@ import ImageUploadMock from 'components/ImageUploadMock';
 import * as S from './styles';
 
 const PageOneTemplate = () => {
-    const options = [
-        { value: 'OK', label: 'OK' },
-        { value: 'Faulty but OK', label: 'Faulty but OK' },
-        { value: 'Faulty', label: 'Faulty' },
-        { value: 'NA', label: 'NA' }
-    ];
-
     const options1 = [
         { value: 'Very Dirty', label: 'Very Dirty' },
         { value: 'Dirty', label: 'Dirty' },
         { value: 'Clean', label: 'Clean' },
+        { value: 'NA', label: 'NA' }
+    ];
+    const options2 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Few bends', label: 'Few bends' },
+        { value: 'Very bent', label: 'Very bent' },
+        { value: 'NA', label: 'NA' }
+    ];
+
+    const options3 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Loose', label: 'Loose' },
+        { value: 'Worn', label: 'Worn' },
+        { value: 'NA', label: 'NA' }
+    ];
+
+    const options4 = [
+        { value: 'OK', label: 'OK' },
+        { value: 'Some resistance', label: 'Some resistance' },
+        { value: 'Catching', label: 'Catching' },
         { value: 'NA', label: 'NA' }
     ];
 
@@ -45,7 +58,7 @@ const PageOneTemplate = () => {
                 <S.QuestionContainer>
                     <S.SubHeading>How dirty is your radiator</S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion1"
+                        questionId="question1"
                         options={options1}
                     />
                 </S.QuestionContainer>
@@ -54,8 +67,8 @@ const PageOneTemplate = () => {
                         Check your radiator for bent fins
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion2"
-                        options={options}
+                        questionId="question2"
+                        options={options2}
                     />
                 </S.QuestionContainer>
                 <S.SubHeading>
@@ -68,8 +81,8 @@ const PageOneTemplate = () => {
                         water pump and fan
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion3"
-                        options={options}
+                        questionId="question3"
+                        options={options3}
                     />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -78,8 +91,8 @@ const PageOneTemplate = () => {
                         pump and alternator
                     </S.SubHeading>
                     <RowRadioButtonsGroup
-                        questionId="Iquestion4"
-                        options={options}
+                        questionId="question4"
+                        options={options4}
                     />
                 </S.QuestionContainer>
                 <FlowButton
