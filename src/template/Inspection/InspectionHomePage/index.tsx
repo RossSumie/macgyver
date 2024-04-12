@@ -15,20 +15,30 @@ const InspectionHomePageTemplate = () => (
                         Router.push('/Inspection/Questionnaire/PageOne')
                     }
                 >
-                    <S.ButtonTitle>Cooling System Inspection</S.ButtonTitle>
+                    <S.ButtonTitle style={{ color: 'black' }}>
+                        Cooling System Inspection
+                    </S.ButtonTitle>
                     <S.InformationContainer>
                         <S.InformationColumn>
-                            <S.ButtonText>Concern Level</S.ButtonText>
-                            <S.ButtonText>Dificulty</S.ButtonText>
+                            <S.ButtonText style={{ color: 'black' }}>
+                                Concern Level
+                            </S.ButtonText>
+                            <S.ButtonText style={{ color: 'black' }}>
+                                Dificulty
+                            </S.ButtonText>
                         </S.InformationColumn>
                         <S.InformationColumn>
                             <S.StatusRow>
                                 <StatusCircle color="yellow" />
-                                <S.ButtonText>50%</S.ButtonText>
+                                <S.ButtonText style={{ color: 'black' }}>
+                                    50%
+                                </S.ButtonText>
                             </S.StatusRow>
                             <S.StatusRow>
                                 <StatusCircle color="green" />
-                                <S.ButtonText>Easy</S.ButtonText>
+                                <S.ButtonText style={{ color: 'black' }}>
+                                    Easy
+                                </S.ButtonText>
                             </S.StatusRow>
                         </S.InformationColumn>
                     </S.InformationContainer>

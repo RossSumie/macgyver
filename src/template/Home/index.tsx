@@ -31,10 +31,14 @@ const HomeTemplate = () => (
             <QuestionHeader title="How can we assist you today?" />
             <S.ButtonContainer>
                 <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>
-                    <S.MenuText>Daily CheckUp</S.MenuText>
+                    <S.MenuText style={{ color: 'black' }}>
+                        Daily CheckUp
+                    </S.MenuText>
                 </S.MenuButton>
                 <S.MenuButton onClick={() => Router.push('/Inspection')}>
-                    <S.MenuText>Inspection</S.MenuText>
+                    <S.MenuText style={{ color: 'black' }}>
+                        Inspection
+                    </S.MenuText>
                     <img
                         src="/assets/exclamation.svg"
                         alt="notification"
@@ -45,10 +49,12 @@ const HomeTemplate = () => (
                 <S.MenuButton
                     onClick={() => Router.push('/SelfReport/InputPage')}
                 >
-                    <S.MenuText>Self Report</S.MenuText>
+                    <S.MenuText style={{ color: 'black' }}>
+                        Self Report
+                    </S.MenuText>
                 </S.MenuButton>
-                <S.MenuButton>
-                    <S.MenuText onClick={() => Router.push('/MachineHealth')}>
+                <S.MenuButton onClick={() => Router.push('/MachineHealth')}>
+                    <S.MenuText style={{ color: 'black' }}>
                         Machine Health Status
                     </S.MenuText>
                 </S.MenuButton>
