@@ -16,8 +16,7 @@ const InputPageTemplate = () => {
                 <S.QuestionContainer>
                     <QuestionHeader title="Would you like to report any issues with your machine?" />
                     <S.SubHeading>
-                        Click the microphone button below and record a brief //
-                        eslint-disable-next-line react/no-unescaped-entities
+                        Click the microphone button below and record a brief
                         audio message. Describe the issue you have noticed in as
                         much detail as possible
                     </S.SubHeading>
