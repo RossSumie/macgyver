@@ -24,14 +24,14 @@ const ReportTemplate = () => {
     const { answers, resetAnswers } = useAnswersContext();
     const handleReset = () => {
         resetAnswers(); // Call resetAnswers function
-        Router.push('/Home'); // Change the route to the home page using Next.js's router
+        Router.push('/Home/SecondHome'); // Change the route to the home page using Next.js's router
     };
 
     return (
         <S.Wrapper>
             <QuestionnaireHeader
-                previousPage="/CheckUp/PageTwo"
-                nextPage="/Home"
+                previousPage="/CheckUp/PageFive"
+                nextPage="/Home/SecondHome"
             />
             <S.Container>
                 <S.Heading>Daily CheckUp Report</S.Heading>

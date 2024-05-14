@@ -29,7 +29,7 @@ function CircularProgressWithLabel(
                 value={value}
                 size={size} // Conditional size
                 thickness={thickness} // Conditional thickness
-                sx={{ color: '#396976' }}
+                sx={{ color: '#202a44' }}
             />
             <Box
                 sx={{

@@ -6,7 +6,7 @@ import * as S from './styles';
 
 // the text color is in "inline" because somehow the color wasn't being rendered on iphones
 
-const HomeTemplate = () => (
+const SecondHomeTemplate = () => (
     <S.Wrapper>
         <QuestionnaireHeader previousPage="/" nextPage="/" />
         <S.Container>
@@ -37,11 +37,18 @@ const HomeTemplate = () => (
                         Daily CheckUp
                     </S.MenuText>
                 </S.MenuButton>
-                <S.MenuButton onClick={() => Router.push('/Inspection')}>
-                    <S.MenuText style={{ color: 'black' }}>
-                        Inspection
-                    </S.MenuText>
-                </S.MenuButton>
+                <S.IntentionButtonContainer>
+                    <S.MenuButton
+                        onClick={() =>
+                            Router.push('/Inspection/RequiredInspectionHome')
+                        }
+                    >
+                        <S.MenuText style={{ color: 'black' }}>
+                            Inspection
+                            <S.NotificationBadge>!</S.NotificationBadge>
+                        </S.MenuText>
+                    </S.MenuButton>
+                </S.IntentionButtonContainer>
                 <S.MenuButton
                     onClick={() => Router.push('/SelfReport/InputPage')}
                 >
@@ -63,4 +70,4 @@ const HomeTemplate = () => (
         </S.Container>
     </S.Wrapper>
 );
-export default HomeTemplate;
+export default SecondHomeTemplate;

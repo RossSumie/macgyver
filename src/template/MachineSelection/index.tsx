@@ -17,7 +17,7 @@ const MachineSelectionTemplate = () => (
             <QuestionHeader title="Please select a machine" />
             <S.ButtonContainer>
                 <S.MenuButton
-                    onClick={() => Router.push('/Home')}
+                    onClick={() => Router.push('/Home/FirstHome')}
                     style={{
                         backgroundImage: 'url("/assets/EC210D.jpg")',
                         backgroundSize: 'cover',
@@ -27,7 +27,7 @@ const MachineSelectionTemplate = () => (
                     <S.ButtonText>EC210D 02</S.ButtonText>
                 </S.MenuButton>
                 <S.MenuButton
-                    onClick={() => Router.push('/Home')}
+                    onClick={() => Router.push('/Home/FirstHome')}
                     style={{
                         backgroundImage: 'url("/assets/EC350D.jpg")',
                         backgroundSize: 'cover',
@@ -37,7 +37,7 @@ const MachineSelectionTemplate = () => (
                     <S.ButtonText>EC350DD 01</S.ButtonText>
                 </S.MenuButton>
                 <S.MenuButton
-                    onClick={() => Router.push('/Home')}
+                    onClick={() => Router.push('/Home/FirstHome')}
                     style={{
                         backgroundImage: 'url("/assets/EC950E.jpg")',
                         backgroundSize: 'cover',
@@ -47,7 +47,7 @@ const MachineSelectionTemplate = () => (
                     <S.ButtonText>EC950E 01</S.ButtonText>
                 </S.MenuButton>
                 <S.MenuButton
-                    onClick={() => Router.push('/Home')}
+                    onClick={() => Router.push('/Home/FirstHome')}
                     style={{
                         backgroundImage: 'url("/assets/EC350D.jpg")',
                         backgroundSize: 'cover',
@@ -57,7 +57,7 @@ const MachineSelectionTemplate = () => (
                     <S.ButtonText>EC350D1 02</S.ButtonText>
                 </S.MenuButton>
                 <S.MenuButton
-                    onClick={() => Router.push('/Home')}
+                    onClick={() => Router.push('/Home/FirstHome')}
                     style={{
                         backgroundImage: 'url("/assets/EC350D.jpg")',
                         backgroundSize: 'cover',
