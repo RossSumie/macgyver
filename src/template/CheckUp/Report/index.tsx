@@ -37,14 +37,30 @@ const ReportTemplate = () => {
                 <S.Heading>Daily CheckUp Report</S.Heading>
                 <S.Information>
                     <S.InformationColumn>
-                        <S.SubHeading>Machine Type : EC210D</S.SubHeading>
-                        <S.SubHeading>
-                            Operator : Arthur Paparounis
-                        </S.SubHeading>
+                        <S.InformationCell>
+                            <S.InformationTitle>
+                                Machine Type :
+                            </S.InformationTitle>
+                            <S.InformationText>EC210D</S.InformationText>
+                        </S.InformationCell>
+                        <S.InformationCell>
+                            <S.InformationTitle>Operator:</S.InformationTitle>
+                            <S.InformationText>
+                                Artur Paparounis
+                            </S.InformationText>
+                        </S.InformationCell>
                     </S.InformationColumn>
                     <S.InformationColumn>
-                        <S.SubHeading>Machine Number : 11341186</S.SubHeading>
-                        <S.SubHeading>Date: 10/04/24</S.SubHeading>
+                        <S.InformationCell>
+                            <S.InformationTitle>
+                                Machine Number :
+                            </S.InformationTitle>
+                            <S.InformationText>11341186</S.InformationText>
+                        </S.InformationCell>
+                        <S.InformationCell>
+                            <S.InformationTitle>Date:</S.InformationTitle>
+                            <S.InformationText>05/16/24</S.InformationText>
+                        </S.InformationCell>
                     </S.InformationColumn>
                 </S.Information>
                 <S.TableWrapper>

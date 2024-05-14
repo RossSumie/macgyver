@@ -33,7 +33,8 @@ export const QuestionContainer = styled.div`
 `;
 
 export const SubHeading = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans';
     font-size: 14px;
+    text-align: justify;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;

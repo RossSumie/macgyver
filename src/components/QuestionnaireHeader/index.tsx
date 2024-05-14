@@ -29,14 +29,7 @@ const QuestionnaireHeader: React.FC<TestProps> = ({
                     alt="logo"
                 />
             </LogoContainer>
-            <IconContainer>
-                <img
-                    src="/assets/Symbol_Info_Black.svg"
-                    alt="home_icon"
-                    width={24}
-                    height={24}
-                />
-            </IconContainer>
+            <IconContainer />
         </Container>
     );
 };

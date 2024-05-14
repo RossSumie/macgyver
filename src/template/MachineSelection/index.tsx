@@ -15,15 +15,6 @@ const MachineSelectionTemplate = () => (
         </S.HeaderContainer>
         <S.Container>
             <QuestionHeader title="Please select a machine" />
-            <S.AddMachineButton>
-                Add New Machine
-                <img
-                    src="/assets/Add.svg"
-                    alt="add_icon"
-                    width={24}
-                    height={24}
-                />
-            </S.AddMachineButton>
             <S.ButtonContainer>
                 <S.MenuButton
                     onClick={() => Router.push('/Home')}
@@ -76,6 +67,15 @@ const MachineSelectionTemplate = () => (
                     <S.ButtonText>EC350D1 03</S.ButtonText>
                 </S.MenuButton>
             </S.ButtonContainer>
+            <S.AddMachineButton>
+                Add New Machine
+                <img
+                    src="/assets/Add.svg"
+                    alt="add_icon"
+                    width={24}
+                    height={24}
+                />
+            </S.AddMachineButton>
         </S.Container>
     </S.Wrapper>
 );

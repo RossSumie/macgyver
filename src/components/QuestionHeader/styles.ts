@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     justify-content: left;
     width: 100%;
     > h1 {
-        font-family: ${({ theme }) => theme.fonts.novumregular};
+        font-family: 'DM Sans', sans-serif;
         font-size: 20px;
         color: ${({ theme }) => theme.colors.primary.dark};
     }

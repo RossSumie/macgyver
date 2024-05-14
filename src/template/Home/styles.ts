@@ -74,7 +74,7 @@ export const MenuButton = styled.button`
 `;
 
 export const MenuText = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.volvobroad};
+    font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: 'black';
@@ -99,14 +99,14 @@ export const LogoContainer = styled.div`
 `;
 
 export const MachineTitle = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.volvobroad};
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: 'black';
 `;
 
 export const MachineSubTitle = styled.h2`
-    font-family: ${({ theme }) => theme.fonts.volvobroad};
+    font-family: 'DM Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
     color: 'black';

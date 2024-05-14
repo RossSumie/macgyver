@@ -39,7 +39,7 @@ export const MenuButton = styled.button`
     border-radius: 8px;
     border: none;
     background-position: 'center';
-    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.5);
     padding: 16px;
     cursor: pointer;
     position: relative;
@@ -69,9 +69,9 @@ export const ButtonText = styled.h1`
     bottom: 5px;
     right: 5px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.primary.light};
-    font-family: ${({ theme }) => theme.fonts.novumlight};
+    font-family: 'DM Sans', sans-serif;
 `;
 
 export const AddMachineButton = styled.button`
@@ -85,6 +85,7 @@ export const AddMachineButton = styled.button`
     outline: none;
     border: none;
     width: 100%;
+    font-family: 'DM Sans', sans-serif;
     background-color: ${({ theme }) => theme.colors.primary.main};
     color: white;
 `;
@@ -95,7 +96,6 @@ export const HeaderContainer = styled.div`
     padding: 0px 16px;
     width: 100%;
     height: 48px;
-
     background-color: ${({ theme }) => theme.colors.primary.light};
     //box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
 `;

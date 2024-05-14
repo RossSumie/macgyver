@@ -48,7 +48,7 @@ export const PageCouterText = styled.h1`
 `;
 
 export const InputTitle = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;

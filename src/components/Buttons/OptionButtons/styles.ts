@@ -11,8 +11,7 @@ export const Wrapper = styled.button`
     background-color: ${({ theme }) => theme.colors.primary.main};
 
     > h1 {
-        font-family: ${({ theme }) => theme.fonts.novumlight};
-        font-weight: ${({ theme }) => theme.fontWeights.novumlight};
+        font-family: 'DM Sans', sans-serif;
         font-size: 16px;
         color: ${({ theme }) => theme.colors.primary.light};
     }

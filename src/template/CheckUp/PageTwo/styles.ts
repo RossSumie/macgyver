@@ -9,12 +9,12 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 export const Heading = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;
 export const SubHeading = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;

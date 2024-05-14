@@ -18,8 +18,7 @@ export const ButtonWrapper = styled.button<ButtonProps>`
         hasColor ? theme.colors.primary.main : 'transparent'};
 
     > h1 {
-        font-family: ${({ theme }) => theme.fonts.novumlight};
-        font-weight: ${({ theme }) => theme.fontWeights.novumlight};
+        font-family: 'DM Sans', sans-serif;
         font-size: 14px;
         color: ${({ hasColor, theme }) =>
             hasColor ? theme.colors.primary.light : theme.colors.primary.dark};

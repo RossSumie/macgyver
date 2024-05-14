@@ -19,7 +19,7 @@ export const Container = styled.div`
     width: 100%;
 `;
 export const Heading = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     color: ${({ theme }) => theme.colors.primary.dark};
     margin-bottom: 24px;
@@ -28,15 +28,30 @@ export const Heading = styled.h1`
 export const Information = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 `;
+export const InformationCell = styled.div``;
 export const InformationColumn = styled.div`
     display: flex;
     gap: 8px;
     flex-direction: column;
 `;
 
+export const InformationTitle = styled.p`
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.primary.dark};
+`;
+
+export const InformationText = styled.p`
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.primary.dark};
+`;
 export const Heading2 = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     color: ${({ theme }) => theme.colors.primary.dark};
     text-align: left;
@@ -49,7 +64,7 @@ export const TableWrapper = styled.div`
 `;
 
 export const SubHeading = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;
@@ -63,7 +78,7 @@ export const GraphContainer = styled.div`
 `;
 
 export const GraphSubtitle = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;
@@ -111,7 +126,7 @@ export const Button = styled.button`
 `;
 
 export const ButtonText = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.light};
 `;

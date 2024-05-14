@@ -42,7 +42,7 @@ export const MenuButton = styled.button`
     box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.32);
 `;
 export const ButtonTitle = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -66,7 +66,7 @@ export const StatusRow = styled.div`
     gap: 2px;
 `;
 export const ButtonText = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumlight};
+    font-family: 'DM Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
     text-align: left;

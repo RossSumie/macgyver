@@ -2,6 +2,7 @@ import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import QuestionHeader from 'components/QuestionHeader';
 import FlowButton from 'components/Buttons/FlowButton';
 import ImageUploadMock from 'components/ImageUploadMock';
+import MicrophoneComponent from 'components/AudioRec';
 import * as S from './styles';
 
 const InputPageTemplate = () => {
@@ -14,8 +15,17 @@ const InputPageTemplate = () => {
             <S.Container>
                 <S.QuestionContainer>
                     <QuestionHeader title="Would you like to report any issues with your machine?" />
-                    <S.TextArea />
-                    <S.SubHeading>Would you like to add pictures?</S.SubHeading>
+                    <S.SubHeading>
+                        Click the microphone button below and record a brief //
+                        eslint-disable-next-line react/no-unescaped-entities
+                        audio message. Describe the issue you have noticed in as
+                        much detail as possible
+                    </S.SubHeading>
+                    <MicrophoneComponent />
+                    <S.SubHeading>
+                        You can add pictures to your report by clicking the
+                        camera button below
+                    </S.SubHeading>
                     <ImageUploadMock />
                 </S.QuestionContainer>
                 <FlowButton

@@ -25,21 +25,37 @@ const ReportTemplate = () => {
     return (
         <S.Wrapper>
             <QuestionnaireHeader
-                previousPage="/Inspection/PageTwo"
+                previousPage="/Inspection/Questionnaire/PageTwo"
                 nextPage="/Home"
             />
             <S.Container>
                 <S.Heading>Inspection Report</S.Heading>
                 <S.Information>
                     <S.InformationColumn>
-                        <S.SubHeading>Machine Type : EC210D</S.SubHeading>
-                        <S.SubHeading>
-                            Operator : Arthur Paparounis
-                        </S.SubHeading>
+                        <S.InformationCell>
+                            <S.InformationTitle>
+                                Machine Type :
+                            </S.InformationTitle>
+                            <S.InformationText>EC210D</S.InformationText>
+                        </S.InformationCell>
+                        <S.InformationCell>
+                            <S.InformationTitle>Operator:</S.InformationTitle>
+                            <S.InformationText>
+                                Artur Paparounis
+                            </S.InformationText>
+                        </S.InformationCell>
                     </S.InformationColumn>
                     <S.InformationColumn>
-                        <S.SubHeading>Machine Number : 11341186</S.SubHeading>
-                        <S.SubHeading>Date: 10/04/24</S.SubHeading>
+                        <S.InformationCell>
+                            <S.InformationTitle>
+                                Machine Number :
+                            </S.InformationTitle>
+                            <S.InformationText>11341186</S.InformationText>
+                        </S.InformationCell>
+                        <S.InformationCell>
+                            <S.InformationTitle>Date:</S.InformationTitle>
+                            <S.InformationText>05/16/24</S.InformationText>
+                        </S.InformationCell>
                     </S.InformationColumn>
                 </S.Information>
                 <S.TextContainer>
@@ -51,29 +67,78 @@ const ReportTemplate = () => {
                 <S.TextContainer>
                     <S.Heading2>Reason for concern</S.Heading2>
                     <S.SubHeading>
-                        Repeated abnormal temperature increases without
-                        enviromental or workload causes
+                        We have noticed repeated abnormal temperature increases
+                        without enviromental or workload causes
                     </S.SubHeading>
+                    <S.ImagesContainer>
+                        <S.Heading2>Analyzed Images</S.Heading2>
+                        <S.SubHeading>
+                            These images taken during your daily checkups raised
+                            concern when analyzed through our AI system
+                        </S.SubHeading>
+                        <S.Images>
+                            <img
+                                src="/assets/motor.jpg"
+                                style={{
+                                    width: 'calc(100% - 8px)',
+                                    height: 'auto'
+                                }}
+                                alt="logo"
+                            />
+                            <img
+                                src="/assets/vara.jpg"
+                                style={{
+                                    width: 'calc(100% - 8px)',
+                                    height: 'auto'
+                                }}
+                                alt="logo"
+                            />
+                            <img
+                                src="/assets/roda.jpg"
+                                style={{
+                                    width: 'calc(100% - 8px)',
+                                    height: 'auto'
+                                }}
+                                alt="logo"
+                            />
+                            <img
+                                src="/assets/motorverde.jpg"
+                                style={{
+                                    width: 'calc(100% - 8px)',
+                                    height: 'auto'
+                                }}
+                                alt="logo"
+                            />
+                            <img
+                                src="/assets/escava.jpg"
+                                style={{
+                                    width: 'calc(100% - 8px)',
+                                    height: 'auto'
+                                }}
+                                alt="logo"
+                            />
+                        </S.Images>
+                    </S.ImagesContainer>
                 </S.TextContainer>
                 <S.TableWrapper>
                     <S.Heading2>Report Log</S.Heading2>
                     {Object.keys(answers).map((questionId) => (
                         <S.TableContainer>
                             <S.TableCell>
-                                <S.SubHeading>
+                                <S.ReportLogText>
                                     {questionTextMap[questionId]}
-                                </S.SubHeading>
+                                </S.ReportLogText>
                             </S.TableCell>
                             <S.TableCell>
-                                <S.SubHeading>
+                                <S.ReportLogText>
                                     {answers[questionId]}
-                                </S.SubHeading>
+                                </S.ReportLogText>
                             </S.TableCell>
                         </S.TableContainer>
                     ))}
                 </S.TableWrapper>
                 <S.ImagesContainer>
-                    <S.Heading2>Images</S.Heading2>
+                    <S.Heading2>Images taken during inspection</S.Heading2>
                     <S.Images>
                         <img
                             src="/assets/motor.jpg"

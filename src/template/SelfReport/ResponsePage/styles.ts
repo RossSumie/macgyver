@@ -24,7 +24,7 @@ export const TextContainer = styled.div`
     gap: 16px;
 `;
 export const SubHeading = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans';
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.dark};
     text-align: justify;

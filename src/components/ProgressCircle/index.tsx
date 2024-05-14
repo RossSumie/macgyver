@@ -19,7 +19,7 @@ function CircularProgressWithLabel(
     // Conditional style based on isSmall
     const size = isSmall ? 40 : 100;
     const thickness = isSmall ? 8 : 10;
-    const fontSize = isSmall ? '10px' : '20px';
+    const fontSize = isSmall ? '8px' : '20px';
 
     return (
         <Box sx={{ position: 'relative', display: 'inline-flex' }}>
