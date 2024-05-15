@@ -81,7 +81,7 @@ export const AddMachineButton = styled.button`
     justify-content: center;
     flex-direction: row;
     gap: 8px;
-    border-radius: 24px;
+    border-radius: 8px;
     outline: none;
     border: none;
     width: 100%;
@@ -105,4 +105,59 @@ export const LogoContainer = styled.div`
     justify-content: center;
     width: 170px;
     height: 72px;
+`;
+
+export const ModalTitle = styled.h1`
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-weight: 700;
+`;
+
+export const ModalText = styled.h1`
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 8px;
+`;
+
+export const ModalHeadertContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+`;
+
+export const CloseButton = styled.button`
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);
+    border: none;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ModalNextButton = styled.button`
+    height: 44px;
+    width: 100%;
+    background-color: ${({ theme }) => theme.colors.primary.main};
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.primary.light};
+    margin-top: 16px;
+`;
+export const IconContainer = styled.div`
+    display: flex;
+    border-radius: 50%;
+    background-color: #66b3a6;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
 `;

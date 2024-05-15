@@ -11,7 +11,7 @@ export const ButtonWrapper = styled.button<ButtonProps>`
     justify-content: center;
     flex-direction: row;
     width: ${({ hasColor }) => (hasColor ? '100%' : 'none')};
-    border-radius: 24px;
+    border-radius: 8px;
     outline: none;
     border: none;
     background-color: ${({ hasColor, theme }) =>

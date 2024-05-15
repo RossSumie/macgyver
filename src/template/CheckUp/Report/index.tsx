@@ -2,6 +2,7 @@ import React from 'react';
 import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import Router from 'next/router';
 import { useAnswersContext } from 'hooks/answerContext';
+import TeamCommentButton from 'components/Buttons/TeamCommentsButton';
 import * as S from './styles';
 
 // Map of question IDs to their corresponding text
@@ -64,7 +65,13 @@ const ReportTemplate = () => {
                     </S.InformationColumn>
                 </S.Information>
                 <S.TableWrapper>
-                    <S.Heading2>Report Log</S.Heading2>
+                    <S.HeadingContainer>
+                        <S.Heading2>Report Log</S.Heading2>
+                        <TeamCommentButton
+                            title="Report Purpose"
+                            content="The daily checkup should be conducted by the operator every day before starting work. This report is a formal record of what the Human Sensor was able to detect about their machine, allowing these data, once sent to Volvo, to be analyzed along with the information Volvo already has from the mechanical sensors (from Active Care). This analysis generates a prediction of the lifespan of concerning equipment parts that will be available in the Machine Health Status dashboard"
+                        />
+                    </S.HeadingContainer>
                     {Object.keys(answers).map((questionId) => (
                         <S.TableContainer>
                             <S.TableCell>
@@ -81,7 +88,13 @@ const ReportTemplate = () => {
                     ))}
                 </S.TableWrapper>
                 <S.ImagesContainer>
-                    <S.Heading2>Images</S.Heading2>
+                    <S.HeadingContainer>
+                        <S.Heading2>Images</S.Heading2>
+                        <TeamCommentButton
+                            title="Raw Images"
+                            content="The images below are supposed to represent the pictures you took during your Daily Checkup flow. They will be sent to our database, where they will then be analyzed through AI to provide feedback on whether there are any concerning aspects."
+                        />
+                    </S.HeadingContainer>
                     <S.Images>
                         <img
                             src="/assets/motor.jpg"
@@ -126,7 +139,7 @@ const ReportTemplate = () => {
                     </S.Images>
                 </S.ImagesContainer>
                 <S.Button onClick={handleReset}>
-                    <S.ButtonText>Back to Menu</S.ButtonText>
+                    <S.ButtonText>Send</S.ButtonText>
                 </S.Button>
             </S.Container>
         </S.Wrapper>

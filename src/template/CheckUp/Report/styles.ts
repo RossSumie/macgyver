@@ -25,6 +25,12 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
 `;
 
+export const HeadingContainer = styled.div`
+    display: flex;
+    gap: 8px;
+    align-items: center;
+`;
+
 export const Information = styled.div`
     display: flex;
     flex-direction: row;
@@ -122,11 +128,12 @@ export const Button = styled.button`
     height: 44px;
     width: 100%;
     background-color: ${({ theme }) => theme.colors.primary.main};
-    border-radius: 24px;
+    border-radius: 8px;
 `;
 
 export const ButtonText = styled.p`
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.primary.light};
 `;

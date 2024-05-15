@@ -36,8 +36,6 @@ export const InformationContainer = styled.div`
 
 export const TitleContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    align-items: left;
 `;
 
 export const MachineHealthContainer = styled.div`
