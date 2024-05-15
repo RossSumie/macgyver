@@ -100,12 +100,16 @@ export const NotificationBadge = styled.span`
 `;
 
 export const IntentionButtonContainer = styled.div`
-    height: 60px;
     width: 100%;
     border-radius: 8px;
     animation: ${pulseAnimation} 2s infinite;
 `;
 
+export const SmallIntentionButtonContainer = styled.div`
+    border-radius: 50%;
+    height: 24px;
+    animation: ${pulseAnimation} 2s infinite;
+`;
 export const MenuText = styled.h1`
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;

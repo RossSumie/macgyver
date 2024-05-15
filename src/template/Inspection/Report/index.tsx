@@ -2,6 +2,7 @@ import React from 'react';
 import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import { useAnswersContext } from 'hooks/answerContext';
 import Router from 'next/router';
+import TeamCommentButton from 'components/Buttons/TeamCommentsButton';
 import * as S from './styles';
 // Map of question IDs to their corresponding text
 const questionTextMap: { [key: string]: string } = {
@@ -65,13 +66,25 @@ const ReportTemplate = () => {
                     </S.SubHeading>
                 </S.TextContainer>
                 <S.TextContainer>
-                    <S.Heading2>Reason for concern</S.Heading2>
+                    <S.HeadingContainer>
+                        <S.Heading2>Reason for concern</S.Heading2>
+                        <TeamCommentButton
+                            title="Reason for requesting this inspection"
+                            content="After the data have been analyzed, if the VolvoHS system concludes that there is a likelihood of a malfunction in any part of the machine, the reason for requesting the inspection should appear in this field."
+                        />
+                    </S.HeadingContainer>
                     <S.SubHeading>
                         We have noticed repeated abnormal temperature increases
                         without enviromental or workload causes
                     </S.SubHeading>
                     <S.ImagesContainer>
-                        <S.Heading2>Analyzed Images</S.Heading2>
+                        <S.HeadingContainer>
+                            <S.Heading2>Analyzed Images</S.Heading2>
+                            <TeamCommentButton
+                                title="AI analyzed images"
+                                content="Here, the user should be able to view the images that they previously uploaded during Daily Checkups along with the assessments made by the VolvoHS image analysis AI."
+                            />
+                        </S.HeadingContainer>
                         <S.SubHeading>
                             These images taken during your daily checkups raised
                             concern when analyzed through our AI system
@@ -138,7 +151,13 @@ const ReportTemplate = () => {
                     ))}
                 </S.TableWrapper>
                 <S.ImagesContainer>
-                    <S.Heading2>Images taken during inspection</S.Heading2>
+                    <S.HeadingContainer>
+                        <S.Heading2>Images taken during inspection</S.Heading2>
+                        <TeamCommentButton
+                            title="Raw Images"
+                            content="The images below are supposed to represent the pictures you took during your Inspection flow. They will also be sent to our database for further analysis"
+                        />
+                    </S.HeadingContainer>
                     <S.Images>
                         <img
                             src="/assets/motor.jpg"

@@ -1,5 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
+const pulseAnimation = keyframes`
+  0% {
+    box-shadow: 0 0 0 0 rgba(141, 201, 191, 2);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(141, 201, 191, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(141, 201, 191, 0);
+  }
+`;
 export const Wrapper = styled.div`
     @media (max-width: 768px) {
     }
@@ -7,6 +18,11 @@ export const Wrapper = styled.div`
     height: 100vh;
     flex-direction: column;
     align-items: center;
+`;
+export const IntentionButtonContainer = styled.div`
+    width: 100%;
+    border-radius: 8px;
+    animation: ${pulseAnimation} 2s infinite;
 `;
 
 export const ButtonContainer = styled.div`

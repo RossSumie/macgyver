@@ -33,10 +33,12 @@ const SecondHomeTemplate = () => (
             </S.InformationWrapper>
             <S.TitleContainer>
                 <QuestionHeader title="How can we assist you today?" />
-                <TeamCommentButton
-                    title="App Flow"
-                    content="Now, after many daily checkups, we have collected sufficient data (alongside data from the machine sensors) to predict malfunctions in specific systems of the machine. If the data begin to show concerning trends, the app will notify the operator to conduct an inspection of the affected area of the machine to gather specific data and refine our predictions."
-                />
+                <S.SmallIntentionButtonContainer>
+                    <TeamCommentButton
+                        title="App Flow"
+                        content="Now, after many daily checkups, we have collected sufficient data (alongside data from the machine sensors) to predict malfunctions in specific systems of the machine. If the data begin to show concerning trends, the app will notify the operator to conduct an inspection of the affected area of the machine to gather specific data and refine our predictions."
+                    />
+                </S.SmallIntentionButtonContainer>
             </S.TitleContainer>
             <S.ButtonContainer>
                 <S.MenuButton onClick={() => Router.push('/CheckUp/PageOne')}>

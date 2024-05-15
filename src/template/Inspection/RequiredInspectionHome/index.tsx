@@ -2,6 +2,7 @@ import QuestionHeader from 'components/QuestionHeader';
 import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import Router from 'next/router';
 import StatusCircle from 'components/StatusCircle';
+import { IntentionButtonContainer } from 'template/Home/SecondHome/styles';
 import * as S from './styles';
 
 const RequiredInspectionHomePageTemplate = () => (
@@ -10,40 +11,42 @@ const RequiredInspectionHomePageTemplate = () => (
         <S.Container>
             <QuestionHeader title="Self Inspection" />
             <S.ButtonContainer>
-                <S.MenuButton
-                    onClick={() =>
-                        Router.push('/Inspection/Questionnaire/PageOne')
-                    }
-                >
-                    <S.ButtonTitle style={{ color: 'black' }}>
-                        Cooling System Inspection
-                    </S.ButtonTitle>
-                    <S.InformationContainer>
-                        <S.InformationColumn>
-                            <S.ButtonText style={{ color: 'black' }}>
-                                Concern Level
-                            </S.ButtonText>
-                            <S.ButtonText style={{ color: 'black' }}>
-                                Dificulty
-                            </S.ButtonText>
-                        </S.InformationColumn>
-                        <S.InformationColumn>
-                            <S.StatusRow>
-                                <StatusCircle color="yellow" />
+                <IntentionButtonContainer>
+                    <S.MenuButton
+                        onClick={() =>
+                            Router.push('/Inspection/Questionnaire/PageOne')
+                        }
+                    >
+                        <S.ButtonTitle style={{ color: 'black' }}>
+                            Cooling System Inspection
+                        </S.ButtonTitle>
+                        <S.InformationContainer>
+                            <S.InformationColumn>
                                 <S.ButtonText style={{ color: 'black' }}>
-                                    50%
+                                    Concern Level
                                 </S.ButtonText>
-                            </S.StatusRow>
-                            <S.StatusRow>
-                                <StatusCircle color="green" />
                                 <S.ButtonText style={{ color: 'black' }}>
-                                    Easy
+                                    Dificulty
                                 </S.ButtonText>
-                            </S.StatusRow>
-                        </S.InformationColumn>
-                    </S.InformationContainer>
-                    <S.NotificationBadge>!</S.NotificationBadge>
-                </S.MenuButton>
+                            </S.InformationColumn>
+                            <S.InformationColumn>
+                                <S.StatusRow>
+                                    <StatusCircle color="yellow" />
+                                    <S.ButtonText style={{ color: 'black' }}>
+                                        50%
+                                    </S.ButtonText>
+                                </S.StatusRow>
+                                <S.StatusRow>
+                                    <StatusCircle color="green" />
+                                    <S.ButtonText style={{ color: 'black' }}>
+                                        Easy
+                                    </S.ButtonText>
+                                </S.StatusRow>
+                            </S.InformationColumn>
+                        </S.InformationContainer>
+                        <S.NotificationBadge>!</S.NotificationBadge>
+                    </S.MenuButton>
+                </IntentionButtonContainer>
                 <S.MenuButton>
                     <S.ButtonTitle style={{ color: 'black' }}>
                         Hydraulic System Inspection

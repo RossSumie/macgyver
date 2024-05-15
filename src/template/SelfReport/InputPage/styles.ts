@@ -9,9 +9,8 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 
-export const TextArea = styled.textarea`
-    width: 100%;
-    height: 100px;
+export const HeadingContainer = styled.div`
+    display: flex;
 `;
 
 export const Container = styled.div`

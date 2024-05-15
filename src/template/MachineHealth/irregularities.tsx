@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TeamCommentButton from 'components/Buttons/TeamCommentsButton';
 import * as S from './styles';
 
 const Irregularities = () => {
@@ -11,7 +12,7 @@ const Irregularities = () => {
                         style={{
                             color: '#FCD12A',
                             fontSize: '16px',
-                            fontFamily: 'Arial'
+                            fontFamily: 'DM Sans'
                         }}
                     >
                         Concern
@@ -31,7 +32,7 @@ const Irregularities = () => {
                         style={{
                             color: 'red',
                             fontSize: '16px',
-                            fontFamily: 'Arial'
+                            fontFamily: 'DM Sans'
                         }}
                     >
                         Fault
@@ -48,7 +49,7 @@ const Irregularities = () => {
                         style={{
                             color: '#FCD12A',
                             fontSize: '16px',
-                            fontFamily: 'Arial'
+                            fontFamily: 'DM Sans'
                         }}
                     >
                         Concern
@@ -59,6 +60,64 @@ const Irregularities = () => {
                         excessive vibrations during engine startup
                     </S.SubHeading>
                     <S.SubHeading>- Further inspection needed</S.SubHeading>
+                </S.IrregularitiesItemContainer>
+                <S.IrregularitiesItemContainer>
+                    <S.HeadingContainer>
+                        <h1
+                            style={{
+                                fontSize: '20px',
+                                fontFamily: 'DM Sans'
+                            }}
+                        >
+                            Analyzed images
+                        </h1>
+                        <TeamCommentButton
+                            title="AI analyzed images"
+                            content="Here, the user should be able to view the images that they previously uploaded during Daily Checkups and Inspections along with the assessments made by the VolvoHS image analysis AI."
+                        />
+                    </S.HeadingContainer>
+                    <S.Images>
+                        <img
+                            src="/assets/motor.jpg"
+                            style={{
+                                width: 'calc(100% - 8px)',
+                                height: 'auto'
+                            }}
+                            alt="logo"
+                        />
+                        <img
+                            src="/assets/vara.jpg"
+                            style={{
+                                width: 'calc(100% - 8px)',
+                                height: 'auto'
+                            }}
+                            alt="logo"
+                        />
+                        <img
+                            src="/assets/roda.jpg"
+                            style={{
+                                width: 'calc(100% - 8px)',
+                                height: 'auto'
+                            }}
+                            alt="logo"
+                        />
+                        <img
+                            src="/assets/motorverde.jpg"
+                            style={{
+                                width: 'calc(100% - 8px)',
+                                height: 'auto'
+                            }}
+                            alt="logo"
+                        />
+                        <img
+                            src="/assets/escava.jpg"
+                            style={{
+                                width: 'calc(100% - 8px)',
+                                height: 'auto'
+                            }}
+                            alt="logo"
+                        />
+                    </S.Images>
                 </S.IrregularitiesItemContainer>
             </S.IrregularitiesContainer>
         </S.Container>

@@ -15,6 +15,7 @@ export const ModalTitle = styled.h1`
     font-family: 'DM Sans';
     font-size: 20px;
     font-weight: 700;
+    width: 85%;
 `;
 
 export const ModalText = styled.h1`

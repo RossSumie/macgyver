@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
     align-items: center;
 `;
 
+export const HeadingContainer = styled.div`
+    display: flex;
+    gap: 8px;
+    align-items: center;
+`;
 export const Container = styled.div`
     margin-top: 54px;
     padding: 0% 10% 10% 10%;
@@ -129,7 +134,7 @@ export const GreenButton = styled.button`
     height: 44px;
     width: 100%;
     background-color: ${({ theme }) => theme.colors.secondary.main};
-    border-radius: 24px;
+    border-radius: 8px;
     border: none;
     margin-bottom: 16px;
 `;
@@ -138,7 +143,7 @@ export const Button = styled.button`
     height: 44px;
     width: 100%;
     background-color: ${({ theme }) => theme.colors.primary.main};
-    border-radius: 24px;
+    border-radius: 8px;
     border: none;
     margin-bottom: 16px;
 `;

@@ -28,6 +28,11 @@ const CustomTabs: React.FC<CustomTabsProps> = ({ tabs }) => {
                 value={value}
                 onChange={handleChange}
                 style={{ width: '100%' }}
+                sx={{
+                    '& .MuiTabs-indicator': {
+                        backgroundColor: '#202A44' // Custom color
+                    }
+                }}
             >
                 {tabs.map((tab) => (
                     <Tab

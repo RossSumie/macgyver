@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-    margin-top: 54px;
     padding: 0% 10% 10% 10%;
     display: flex;
     flex-direction: column;
@@ -19,20 +18,28 @@ export const Container = styled.div`
     justify-content: space-between;
     width: 100%;
 `;
+export const HeadingContainer = styled.div`
+    display: flex;
+    gap: 8px;
+`;
+
+export const SysHealthContainer = styled.div`
+    padding-top: 56px;
+`;
 export const Heading = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
-    font-size: 24px;
+    font-family: 'DM Sans';
+    font-size: 20px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;
 
 export const Heading2 = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans';
     font-size: 16px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;
 
 export const SubHeading = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans';
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.dark};
 `;
@@ -57,7 +64,7 @@ export const GraphContainer = styled.div`
 `;
 
 export const GraphSubtitle = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans';
     font-size: 16px;
     font-weight: 600;
     color: ${({ theme }) => theme.colors.primary.dark};
@@ -79,7 +86,21 @@ export const TableCell = styled.div`
 `;
 
 export const ButtonText = styled.p`
-    font-family: ${({ theme }) => theme.fonts.novumregular};
+    font-family: 'DM Sans';
     font-size: 14px;
     color: ${({ theme }) => theme.colors.primary.light};
+`;
+
+export const Images = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-auto-rows: minmax(
+        50px,
+        auto
+    ); /* Minimum row height of 100px, auto-adjust based on content */
+    gap: 10px; /* Gap between grid items */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
 `;
