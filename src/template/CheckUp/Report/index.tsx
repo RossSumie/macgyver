@@ -25,7 +25,7 @@ const ReportTemplate = () => {
     const { answers, resetAnswers } = useAnswersContext();
     const handleReset = () => {
         resetAnswers(); // Call resetAnswers function
-        Router.push('/Home/SecondHome'); // Change the route to the home page using Next.js's router
+        Router.push('/CheckUp/Final'); // Change the route to the home page using Next.js's router
     };
 
     return (

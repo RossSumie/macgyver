@@ -21,7 +21,7 @@ const ReportTemplate = () => {
 
     const handleReset = () => {
         resetAnswers(); // Call resetAnswers function
-        Router.push('/Home'); // Change the route to the home page using Next.js's router
+        Router.push('/Inspection/Final'); // Change the route to the home page using Next.js's router
     };
 
     return (
@@ -208,7 +208,7 @@ const ReportTemplate = () => {
                     </S.GreenButton>
                 </NotDevelopedButton>
                 <S.Button onClick={handleReset}>
-                    <S.ButtonText>Back to menu</S.ButtonText>
+                    <S.ButtonText>Send</S.ButtonText>
                 </S.Button>
             </S.Container>
         </S.Wrapper>
