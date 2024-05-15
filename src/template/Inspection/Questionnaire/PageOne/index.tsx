@@ -3,6 +3,7 @@ import { BorderLinearProgress } from 'components/ProgressBar';
 import FlowButton from 'components/Buttons/FlowButton';
 import RowRadioButtonsGroup from 'components/RadioButtonGroup';
 import ImageUploadMock from 'components/ImageUploadMock';
+import ARModal from 'components/Buttons/ARModal';
 import * as S from './styles';
 
 const PageOneTemplate = () => {
@@ -53,6 +54,7 @@ const PageOneTemplate = () => {
                     <S.SubHeading>
                         Please take a picture of your radiator
                     </S.SubHeading>
+                    <ARModal partName="Radiator" />
                     <ImageUploadMock />
                 </S.QuestionContainer>
                 <S.QuestionContainer>
@@ -71,10 +73,13 @@ const PageOneTemplate = () => {
                         options={options2}
                     />
                 </S.QuestionContainer>
-                <S.SubHeading>
-                    Take a picture of the belts to the water pump and fan
-                </S.SubHeading>
-                <ImageUploadMock />
+                <S.QuestionContainer>
+                    <S.SubHeading>
+                        Take a picture of the belts to the water pump and fan
+                    </S.SubHeading>
+                    <ARModal partName="Belts" />
+                    <ImageUploadMock />
+                </S.QuestionContainer>
                 <S.QuestionContainer>
                     <S.SubHeading>
                         Check the tightness and condition of the belts to the

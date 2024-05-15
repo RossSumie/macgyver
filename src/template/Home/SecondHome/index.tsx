@@ -3,6 +3,7 @@ import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import Router from 'next/router';
 import CircularWithValueLabel from 'components/ProgressCircle';
 import TeamCommentButton from 'components/Buttons/TeamCommentsButton';
+import NotDevelopedButton from 'components/Buttons/NotDeveloped';
 import * as S from './styles';
 
 // the text color is in "inline" because somehow the color wasn't being rendered on iphones
@@ -70,11 +71,13 @@ const SecondHomeTemplate = () => (
                         Machine Health Status
                     </S.MenuText>
                 </S.MenuButton>
-                <S.MenuButton>
-                    <S.MenuText style={{ color: 'black' }}>
-                        Troubleshoot Guide
-                    </S.MenuText>
-                </S.MenuButton>
+                <NotDevelopedButton>
+                    <S.MenuButton>
+                        <S.MenuText style={{ color: 'black' }}>
+                            Troubleshoot Guide
+                        </S.MenuText>
+                    </S.MenuButton>
+                </NotDevelopedButton>
             </S.ButtonContainer>
         </S.Container>
     </S.Wrapper>

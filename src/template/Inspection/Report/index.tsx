@@ -3,6 +3,7 @@ import QuestionnaireHeader from 'components/QuestionnaireHeader';
 import { useAnswersContext } from 'hooks/answerContext';
 import Router from 'next/router';
 import TeamCommentButton from 'components/Buttons/TeamCommentsButton';
+import NotDevelopedButton from 'components/Buttons/NotDeveloped';
 import * as S from './styles';
 // Map of question IDs to their corresponding text
 const questionTextMap: { [key: string]: string } = {
@@ -201,9 +202,11 @@ const ReportTemplate = () => {
                         />
                     </S.Images>
                 </S.ImagesContainer>
-                <S.GreenButton>
-                    <S.ButtonText>Download Report</S.ButtonText>
-                </S.GreenButton>
+                <NotDevelopedButton>
+                    <S.GreenButton>
+                        <S.ButtonText>Download Report</S.ButtonText>
+                    </S.GreenButton>
+                </NotDevelopedButton>
                 <S.Button onClick={handleReset}>
                     <S.ButtonText>Back to menu</S.ButtonText>
                 </S.Button>
